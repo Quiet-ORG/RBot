@@ -28,14 +28,35 @@ namespace RBot
         [ObjectBinding("litePreference.data.bCustomDrops")]
         public bool CustomDropsUI { get; set; }
 
+        [ObjectBinding("litePreference.data.bReaccept")]
+        public bool ReacceptQuest { get; set; }
+
+        [ObjectBinding("litePreference.data.bBattlepet")]
+        public bool BattlePet { get; set; }
+
+        [ObjectBinding("litePreference.data.bSkillCD")]
+        public bool SkillCoolDown { get; set; }
+
+        /// <summary>
+        /// Returns a lite option bool.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="optionName"></param>
+        /// <returns>optionName</returns>
         public T Get<T>(string optionName)
         {
-            return Bot.GetGameObject<T>($"litePreferences.data.{optionName}");
+            return Bot.GetGameObject<T>($"litePreference.data.{optionName}");
         }
 
+        /// <summary>
+        /// Set your own lite settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="optionName"></param>
+        /// <param name="value"></param>
         public void Set<T>(string optionName, T value)
         {
-            Bot.SetGameObject($"litePreferences.data.{optionName}", value);
+            Bot.SetGameObject($"litePreference.data.{optionName}", value);
         }
     }
 }
