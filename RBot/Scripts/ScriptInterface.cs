@@ -25,63 +25,78 @@ namespace RBot
         /// An object holding options for the current bot.
         /// </summary>
         public ScriptOptions Options { get; set; }
+
         /// <summary>
         /// /// An object holding a set of methods for waiting for certain events to occur.
         /// </summary>
         public ScriptWait Wait { get; set; }
+
         /// <summary>
         /// An object holding a set of methods which allow most of the interaction between the script and the game.
         /// </summary>
         public ScriptPlayer Player { get; set; }
+
         /// <summary>
         /// An object holding a set of methods for accessing information about currently loaded monsters.
         /// </summary>
         public ScriptMonsters Monsters { get; set; }
+
         /// <summary>
         /// An object holding a set of methods for inventory management.
         /// </summary>
         public ScriptInventory Inventory { get; set; }
+
         /// <summary>
         /// An object holding a set of methods for bank management.
         /// </summary>
         /// <remarks>It is important to ensure the bank is loaded before trying to check the presence of items or move them between the bank or inventory. This can be done manually or by using <see cref="M:RBot.ScriptPlayer.LoadBank(System.Boolean)" />.</remarks>
         public ScriptBank Bank { get; set; }
+
         /// <summary>
         /// An object holding a set of methods for getting information about the currently loaded map.
         /// </summary>
         public ScriptMap Map { get; set; }
+
         /// <summary>
         /// An object holding a set of methods for quest management.
         /// </summary>
         public ScriptQuests Quests { get; set; }
+
         /// <summary>
         /// An object holding a set of methods for accessing and interacting with shops.
         /// </summary>
         public ScriptShops Shops { get; set; }
+
         /// <summary>
         /// The skill manager is used to enable skills to be used in combat.
         /// </summary>
         public ScriptSkills Skills { get; set; }
+
         /// <summary>
         /// An object holding runtime variables for the currently running script. These are cleared when another script is started.
         /// </summary>
         public ScriptRuntimeVars Runtime { get; set; }
+
         /// <summary>
         /// An object holding stats about the current botting session.
         /// </summary>
         public ScriptBotStats Stats { get; set; }
+
         /// <summary>
         /// An object holding a set of events which can be listened for.
         /// </summary>
         public ScriptEvents Events { get; set; }
+
         /// <summary>
         /// This contains options for the currently loaded script.
         /// </summary>
         public ScriptOptionContainer Config { get; set; }
+
         /// <summary>
-		/// The drop grabber can be used to accept/reject drops. It does this on the script timer thread. This is significantly less safe than waiting for the drop to be picked up on the main thread of the running bot.
-		/// </summary>
+        /// The drop grabber can be used to accept/reject drops. It does this on the script timer thread. This is significantly less safe than waiting for the drop to be picked up on the main thread of the running bot.
+        /// </summary>
         public ScriptDrops Drops { get; set; }
+
         /// <summary>
         /// AQLite options manager.
         /// </summary>
@@ -188,6 +203,7 @@ namespace RBot
         }
 
         private volatile int _iHandler;
+
         /// <summary>
         /// Register an action to be executed every time the specified number of ticks has passed. A tick is 20ms.
         /// </summary>
@@ -269,6 +285,16 @@ namespace RBot
         }
 
         /// <summary>
+        /// Sends a whisper to a player.
+        /// </summary>
+        /// <param name="name">Name of the player</param>
+        /// <param name="message">Message to send to the player</param>
+        public void SendWhisper(string name, string message)
+        {
+            CallGameFunction("sfc.send" + "String", $"%xt%zm%whisper%1%{message}%{name}%");
+        }
+
+        /// <summary>
         /// Sends the specified packet to the client (simulates a response as if the server sent the packet).
         /// </summary>
         /// <param name="packet">The packet to send.</param>
@@ -276,6 +302,17 @@ namespace RBot
         public void SendClientPacket(string packet, string type = "str")
         {
             FlashUtil.Call("sendClientPacket", packet, type);
+        }
+
+        /// <summary>
+        /// Sends a message packet to client in chat.
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="sentBy">Name of which who sent the message, defaults to "Message"</param>
+        /// <param name="messageType">moderator, warning, server, event, guild, zone, whisper</param>
+        public void SendMSGPacket(string message = " ", string sentBy = "SERVER", string messageType = "zone")
+        {
+            FlashUtil.Call("sendClientPacket", $"%xt%chatm%0%{messageType}~{message}%{sentBy}%", "str");
         }
 
         /// <summary>
@@ -443,13 +480,16 @@ namespace RBot
                 case "requestLoadGame":
                     FlashUtil.Call("loadClient", AppRuntime.Options.Get<string>("client.swf"));
                     break;
+
                 case "debug":
                     Debug.WriteLine(args[0]);
                     break;
+
                 case "loaded":
                     Schedule(500, b => FlashUtil.Call("setTitle", $"RBot {Application.ProductVersion}"));
                     Forms.Main.Text = $"RBot {Application.ProductVersion}";
                     break;
+
                 case "pext":
                     dynamic packet = JsonConvert.DeserializeObject<dynamic>((string)args[0]);
                     string type = packet["params"].type;
@@ -466,6 +506,7 @@ namespace RBot
                                     Options.CustomGuild = Options.CustomGuild;
                                 Events.OnMapChanged((string)data.strMapName);
                                 break;
+
                             case "ct":
                                 dynamic p = data.p == null ? null : data.p[Player.Username.ToLower()];
                                 if (p != null && p.intHP == 0)
@@ -474,17 +515,21 @@ namespace RBot
                                     Events.OnPlayerDeath();
                                 }
                                 break;
+
                             case "sellItem":
                                 Wait.ItemSellEvent.Set();
                                 break;
+
                             case "buyItem":
                                 if (data.bitSuccess == 1)
                                     Wait.ItemBuyEvent.Set();
                                 break;
+
                             case "getDrop":
                                 if (data.bSuccess == 1)
                                     Stats.Drops += (int)data.iQty;
                                 break;
+
                             case "addGoldExp":
                                 if (data.typ == "m")
                                 {
@@ -492,6 +537,7 @@ namespace RBot
                                     Events.OnMonsterKilled();
                                 }
                                 break;
+
                             case "ccqr":
                                 if (data.bSuccess == 1)
                                 {
@@ -499,9 +545,11 @@ namespace RBot
                                     Events.OnQuestTurnIn((int)data.QuestID);
                                 }
                                 break;
+
                             case "loadBank":
                                 Wait.BankLoadEvent.Set();
                                 break;
+
                             case "sAct":
                                 if (AppRuntime.Options.Get<bool>("secret.zmana"))
                                 {
@@ -515,6 +563,7 @@ namespace RBot
                                     }
                                 }
                                 break;
+
                             case "loadShop":
                                 ShopCache.OnLoaded(Shops.ShopID, Shops.ShopName);
                                 break;
@@ -534,6 +583,7 @@ namespace RBot
 
                     Events.OnExtensionPacket(packet);
                     break;
+
                 case "packet":
                     string[] parts = ((string)args[0]).Split(new char[] { '%' }, StringSplitOptions.RemoveEmptyEntries);
                     switch (parts[2])
@@ -541,9 +591,11 @@ namespace RBot
                         case "moveToCell":
                             Events.OnCellChanged(Map.Name, parts[4], parts[5]);
                             break;
+
                         case "buyItem":
                             Events.OnTryBuyItem(int.Parse(parts[5]), int.Parse(parts[4]), int.Parse(parts[6]));
                             break;
+
                         case "acceptQuest":
                             Stats.QuestsAccepted++;
                             Events.OnQuestAccepted(int.Parse(parts[4]));
@@ -555,6 +607,7 @@ namespace RBot
 
         private TimeLimiter _limit = new TimeLimiter();
         private const int _timerDelay = 20;
+
         private void _TimerThread()
         {
             bool hasLoggedIn = false;
@@ -693,6 +746,7 @@ namespace RBot
 
         private Task _reloginTask;
         private CancellationTokenSource _reloginCts;
+
         private void _Relogin(int delay, bool startScript)
         {
             Log("Waiting " + delay + "ms for relogin.");

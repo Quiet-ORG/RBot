@@ -157,7 +157,6 @@
             this.MaximizeBox = false;
             this.Name = "ScriptsForm";
             this.Text = "Scripts";
-            this.Load += new System.EventHandler(this.ScriptsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

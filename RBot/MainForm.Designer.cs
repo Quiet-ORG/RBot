@@ -48,6 +48,7 @@
             this.scriptEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cosmeticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.botBuilderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stratBuilderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aS3InjectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pluginsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +62,6 @@
             this.hidePlayersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addDebugHandlersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gameContainer = new System.Windows.Forms.Panel();
-            this.stratBuilderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,21 +151,21 @@
             // spammerToolStripMenuItem
             // 
             this.spammerToolStripMenuItem.Name = "spammerToolStripMenuItem";
-            this.spammerToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.spammerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.spammerToolStripMenuItem.Text = "Spammer";
             this.spammerToolStripMenuItem.Click += new System.EventHandler(this.spammerToolStripMenuItem_Click);
             // 
             // loggerToolStripMenuItem
             // 
             this.loggerToolStripMenuItem.Name = "loggerToolStripMenuItem";
-            this.loggerToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.loggerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loggerToolStripMenuItem.Text = "Logger";
             this.loggerToolStripMenuItem.Click += new System.EventHandler(this.loggerToolStripMenuItem_Click);
             // 
             // interceptorToolStripMenuItem
             // 
             this.interceptorToolStripMenuItem.Name = "interceptorToolStripMenuItem";
-            this.interceptorToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.interceptorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.interceptorToolStripMenuItem.Text = "Interceptor";
             this.interceptorToolStripMenuItem.Click += new System.EventHandler(this.interceptorToolStripMenuItem_Click);
             // 
@@ -234,6 +234,13 @@
             this.botBuilderToolStripMenuItem.Visible = false;
             this.botBuilderToolStripMenuItem.Click += new System.EventHandler(this.botBuilderToolStripMenuItem_Click);
             // 
+            // stratBuilderToolStripMenuItem
+            // 
+            this.stratBuilderToolStripMenuItem.Name = "stratBuilderToolStripMenuItem";
+            this.stratBuilderToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.stratBuilderToolStripMenuItem.Text = "Strategies";
+            this.stratBuilderToolStripMenuItem.Click += new System.EventHandler(this.stratBuilderToolStripMenuItem_Click);
+            // 
             // aS3InjectorToolStripMenuItem
             // 
             this.aS3InjectorToolStripMenuItem.Name = "aS3InjectorToolStripMenuItem";
@@ -268,21 +275,21 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // discordToolStripMenuItem
             // 
             this.discordToolStripMenuItem.Name = "discordToolStripMenuItem";
-            this.discordToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.discordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.discordToolStripMenuItem.Text = "Discord";
             this.discordToolStripMenuItem.Click += new System.EventHandler(this.discordToolStripMenuItem_Click);
             // 
             // documentationToolStripMenuItem
             // 
             this.documentationToolStripMenuItem.Name = "documentationToolStripMenuItem";
-            this.documentationToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.documentationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.documentationToolStripMenuItem.Text = "Documentation";
             this.documentationToolStripMenuItem.Click += new System.EventHandler(this.documentationToolStripMenuItem_Click);
             // 
@@ -332,13 +339,6 @@
             this.gameContainer.Name = "gameContainer";
             this.gameContainer.Size = new System.Drawing.Size(1036, 595);
             this.gameContainer.TabIndex = 1;
-            // 
-            // stratBuilderToolStripMenuItem
-            // 
-            this.stratBuilderToolStripMenuItem.Name = "stratBuilderToolStripMenuItem";
-            this.stratBuilderToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.stratBuilderToolStripMenuItem.Text = "Strategies";
-            this.stratBuilderToolStripMenuItem.Click += new System.EventHandler(this.stratBuilderToolStripMenuItem_Click);
             // 
             // MainForm
             // 

@@ -145,6 +145,7 @@ namespace RBot
         /// </summary>
         [ObjectBinding("world.myAvatar.objData.intAccessLevel")]
         public int AccessLevel { get; set; }
+
         /// <summary>
         /// Gets/sets whether the player is upgrade or not.
         /// </summary>
@@ -160,56 +161,68 @@ namespace RBot
                 Bot.SetGameObject("world.myAvatar.objData.iUpgDays", value ? 1000 : 0);
             }
         }
+
         /// <summary>
         /// Gets an array containing information about the player's current skills.
         /// </summary>
         [ObjectBinding("world.actions.active")]
         public SkillInfo[] Skills { get; }
+
         /// <summary>
         /// Checks whether the player is marked as AFK or not.
         /// </summary>
         [ObjectBinding("world.myAvatar.dataLeaf.afk")]
         public bool AFK { get; }
+
         /// <summary>
         /// The current position of the player.
         /// </summary>
         public PointF Position => new PointF(X, Y);
+
         /// <summary>
         /// The player's current X coordinate.
         /// </summary>
         [ObjectBinding("world.myAvatar.pMC.x")]
         public float X { get; }
+
         /// <summary>
         /// The player's current Y coordinate.
         /// </summary>
         [ObjectBinding("world.myAvatar.pMC.y")]
         public float Y { get; }
+
         /// <summary>
         /// Gets or sets the walking speed of the player. The default value is 8.
         /// </summary>
         [ObjectBinding("world.WALKSPEED")]
         public int WalkSpeed { get; set; }
+
         /// <summary>
         /// This does nothing at the moment...
         /// </summary>
         [ObjectBinding("world.SCALE")]
         public int Scale { get; set; }
+
         /// <summary>
         /// The currently targeted monster. If no monster is targeted, null is returned.
         /// </summary>
         [ObjectBinding("world.myAvatar.target.objData", RequireNotNull = "world.myAvatar.target")]
         public Monster Target { get; }
+
         /// <summary>
         /// Gets an array containing all the names of the factions that the player has some reputation in.
         /// </summary>
         [ObjectBinding("world.myAvatar.factions")]
         public List<Faction> Factions { get; }
+
         [CallBinding("getDrops", Json = true)]
         private List<DropInfo> _currentDrops { get; }
+
         /// <summary>
         /// Gets a list of item names currently on the drop stack.
         /// </summary>
         public List<string> CurrentDrops => _currentDrops.Select(x => x.Name.Trim()).Distinct().ToList();
+
         /// <summary>
         /// Gets a list of drops available with their counts.
         /// </summary>
@@ -412,9 +425,7 @@ namespace RBot
         public void ApproachTarget() { }
 
         [MethodCallBinding("world.cancelAutoAttack", GameFunction = true)]
-        public void CancelAutoAttack()
-        {
-        }
+        public void CancelAutoAttack() { }
 
         /// <summary>
         /// Attacks the specified monster.
@@ -939,7 +950,7 @@ namespace RBot
         {
             Bot.SendPacket($"%xt%zm%serverUseItem%{Bot.Map.RoomID}%+%{id}%");
         }
-        
+
         /// <summary>
         /// Gets the players rank of the given faction.
         /// </summary>

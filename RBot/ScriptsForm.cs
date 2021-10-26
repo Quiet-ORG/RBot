@@ -20,16 +20,11 @@ namespace RBot
             ScriptManager.ScriptStopped += ScriptManager_ScriptStopped;
         }
 
-        private void ScriptsForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLoadScript_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
-                ofd.Filter = "RBot Scripts (*.cs)|*.cs";
+                ofd.Filter = "RBot Scripts (*.cs)|*.cs|Text Files (*.txt)|*txt|All files (*.*)|*.*";
                 ofd.InitialDirectory = Path.Combine(Environment.CurrentDirectory, "Scripts");
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {

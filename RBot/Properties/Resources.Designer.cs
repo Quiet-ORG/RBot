@@ -61,7 +61,7 @@ namespace RBot.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 12/10/2021 23:31:26.22 
+        ///   Looks up a localized string similar to Mon 10/25/2021 20:30:36.15 
         ///.
         /// </summary>
         internal static string BuildDate {

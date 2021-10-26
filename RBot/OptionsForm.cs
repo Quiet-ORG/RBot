@@ -46,11 +46,13 @@ namespace RBot
         private void chkUpgrade_CheckedChanged(object sender, EventArgs e)
         {
             Bot.Player.Upgrade = chkUpgrade.Checked;
+            Bot.SetGameObject("world.myAvatar.pMC.pname.ti.textColor", chkUpgrade.Checked ? 0x8CD5FF : 0xFFFFFF);
         }
 
         private void chkStaff_CheckedChanged(object sender, EventArgs e)
         {
-            Bot.Player.AccessLevel = chkUpgrade.Checked ? 100 : 10;
+            Bot.Player.AccessLevel = chkStaff.Checked ? 100 : 10;
+            Bot.SetGameObject("world.myAvatar.pMC.pname.ti.textColor", chkUpgrade.Checked ? 0xFECB38 : 0xFFFFFF);
         }
 
         private void chkFpsCounter_CheckedChanged(object sender, EventArgs e)
