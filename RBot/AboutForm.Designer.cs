@@ -88,6 +88,7 @@ namespace RBot
             this.richTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.richTextBox1.Location = new System.Drawing.Point(15, 181);
             this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(232, 63);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "1) rodit (https://github.com/rodit/)\n     ⤷ Fork: https://github.com/rodit/RBot\n2" +
