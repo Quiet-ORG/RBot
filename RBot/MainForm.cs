@@ -18,14 +18,15 @@ using RBot.Updates;
 using RBot.Plugins;
 using RBot.Utils;
 using RBot.Options;
+using Telerik.WinControls.UI;
+using Telerik.WinControls;
 
 namespace RBot
 {
-    public partial class MainForm : Form
+    public partial class MainForm : RadForm
     {
         public ScriptInterface Bot => ScriptInterface.Instance;
-        public MenuStrip MainMenu => mainMenu;
-
+        public RadMenu MainMenu => mainMenu;
         public MainForm()
         {
             Forms.Main = this;
@@ -49,14 +50,18 @@ namespace RBot
             });
 
             KeyPreview = true;
-            KeyPress += MainForm_KeyPress;
-            FormClosing += MainForm_FormClosing;
+            KeyPress += MainForm2_KeyPress;
+            FormClosing += MainForm2_FormClosing;
 
-            debugToolStripMenuItem.Visible = Debugger.IsAttached;
             if (Debugger.IsAttached)
             {
+                debugToolStripMenuItem.Visibility = ElementVisibility.Visible;
                 Forms.Log.Show();
                 Debug.WriteLine("Debugger is attached.");
+            }
+            else
+            {
+                debugToolStripMenuItem.Visibility = ElementVisibility.Hidden;
             }
         }
 
@@ -93,13 +98,13 @@ namespace RBot
             }
         }
 
-        private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
+        private void MainForm2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '#')
                 Forms.Console.Show();
         }
 
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void MainForm2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Bot.Exit();
             Environment.Exit(0);
@@ -139,7 +144,7 @@ namespace RBot
             EoLHook.Unhook();
         }
 
-        private async void MainForm_Load(object sender, EventArgs e)
+        private async void MainForm2_Load(object sender, EventArgs e)
         {
             if (AppRuntime.Options.Get<bool>("updates.check"))
             {
@@ -168,11 +173,32 @@ namespace RBot
             Bot.Options.HidePlayers = !ScriptInterface.Instance.Options.HidePlayers;
         }
 
+        private void addDebugHandlersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bot.Events.CellChanged += (_, m, c, p) => Debug.WriteLine($"CellChanged: {m}: {c}, {p}");
+            Bot.Events.MapChanged += (_, m) => Debug.WriteLine($"MapChanged: {m}");
+            Bot.Events.MonsterKilled += _ => Debug.WriteLine("MonsterKilled");
+            Bot.Events.PlayerAFK += _ => Debug.WriteLine("PlayerAFK");
+            Bot.Events.PlayerDeath += _ => Debug.WriteLine("PlayerDeath");
+            Bot.Events.QuestAccepted += (_, q) => Debug.WriteLine($"QuestAccepted: {q}");
+            Bot.Events.QuestTurnedIn += (_, q) => Debug.WriteLine($"QuestTurnedIn: {q}");
+            Bot.Events.ReloginTriggered += (_, k) => Debug.WriteLine($"ReloginTriggered: {k}");
+            Bot.Events.TryBuyItem += (_, id, sid, siid) => Debug.WriteLine($"TryBuyItem: {id}, {sid}, {siid}");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.About.Show();
+        }
+
         private void scriptsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Forms.Scripts.Show();
         }
 
+        /*
+         * Options
+        */
         private void botOptionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Forms.Options.Show();
@@ -208,20 +234,24 @@ namespace RBot
             }
         }
 
-        private void autoReloginToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.AutoRelogin.Show();
-        }
-
         private void applicationOptionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (GenericOptionsForm gof = new GenericOptionsForm() { Container = AppRuntime.Options })
                 gof.ShowDialog();
         }
+        // End Options
 
-        private void logToolStripMenuItem_Click(object sender, EventArgs e)
+        /*
+         * tools
+        */
+        private void pluginsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Forms.Log.Show();
+            Forms.Plugins.Show();
+        }
+
+        private void relogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.AutoRelogin.Show();
         }
 
         private void skillsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -229,6 +259,35 @@ namespace RBot
             Forms.Skills.Show();
         }
 
+        private void cosmeticToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Cosmetics.Show();
+        }
+
+        private void strategiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.StratBuilder.Show();
+        }
+
+        private void as3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Injector.Show();
+        }
+
+        private void statsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Stats.Show();
+        }
+
+        private void updatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Updates.Show();
+        }
+        // End Tools
+
+        /*
+         * Packets
+        */
         private void spammerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Forms.PacketSpammer.Show();
@@ -243,6 +302,12 @@ namespace RBot
         {
             Forms.PacketInterceptor.Show();
         }
+        // End Packets
+
+        private void jumpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Forms.Jump.Show();
+        }
 
         private void loadersToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -254,77 +319,9 @@ namespace RBot
             Bot.Player.OpenBank();
         }
 
-        private void jumpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void logsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Forms.Jump.Show();
-        }
-
-        private void aS3InjectorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.Injector.Show();
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.About.Show();
-        }
-
-        private void discordToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://discord.gg/D2S4pvb");
-        }
-
-        private void documentationToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://rodit.github.io/rbot-scripts/");
-        }
-
-        private void pluginsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.Plugins.Show();
-        }
-
-        private void updatesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.Updates.Show();
-        }
-
-        private void statsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.Stats.Show();
-        }
-
-        private void scriptEditorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.ScriptEditor.Show();
-        }
-
-        private void cosmeticsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.Cosmetics.Show();
-        }
-
-        private void botBuilderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.BotBuilder.Show();
-        }
-
-        private void stratBuilderToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Forms.StratBuilder.Show();
-        }
-
-        private void addDebugHandlersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Bot.Events.CellChanged += (_, m, c, p) => Debug.WriteLine($"CellChanged: {m}: {c}, {p}");
-            Bot.Events.MapChanged += (_, m) => Debug.WriteLine($"MapChanged: {m}");
-            Bot.Events.MonsterKilled += _ => Debug.WriteLine("MonsterKilled");
-            Bot.Events.PlayerAFK += _ => Debug.WriteLine("PlayerAFK");
-            Bot.Events.PlayerDeath += _ => Debug.WriteLine("PlayerDeath");
-            Bot.Events.QuestAccepted += (_, q) => Debug.WriteLine($"QuestAccepted: {q}");
-            Bot.Events.QuestTurnedIn += (_, q) => Debug.WriteLine($"QuestTurnedIn: {q}");
-            Bot.Events.ReloginTriggered += (_, k) => Debug.WriteLine($"ReloginTriggered: {k}");
-            Bot.Events.TryBuyItem += (_, id, sid, siid) => Debug.WriteLine($"TryBuyItem: {id}, {sid}, {siid}");
+            Forms.Log.Show();
         }
     }
 }

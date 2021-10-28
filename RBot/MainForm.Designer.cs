@@ -1,4 +1,5 @@
-﻿namespace RBot
+﻿
+namespace RBot
 {
     partial class MainForm
     {
@@ -28,331 +29,287 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainMenu = new System.Windows.Forms.MenuStrip();
-            this.scriptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.botOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scriptOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.autoReloginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.applicationOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.packetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.spammerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.interceptorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skillsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scriptEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cosmeticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.botBuilderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stratBuilderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aS3InjectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pluginsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.discordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.documentationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reloadFlashToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hidePlayersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addDebugHandlersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
+            this.aboutToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.scriptsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.toolsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.pluginsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.relogToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.skillsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.cosmeticToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.strategiesToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.as3ToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.statsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.updatesToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.mainMenu = new Telerik.WinControls.UI.RadMenu();
+            this.optionsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.botOptionsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.scriptOptionsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.applicationOptionsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.packetsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.spammerToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.loggerToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.interceptorToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.jumpToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.loadersToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.bankToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.logsToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.debugToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.reloadFlashToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.setNameToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.hidePlayersToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.addDebugHandlersToolStripMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.gameContainer = new System.Windows.Forms.Panel();
-            this.mainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // mainMenu
+            // aboutToolStripMenuItem
             // 
-            this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.scriptsToolStripMenuItem,
-            this.optionsToolStripMenuItem,
-            this.packetsToolStripMenuItem,
-            this.loadersToolStripMenuItem,
-            this.bankToolStripMenuItem,
-            this.skillsToolStripMenuItem,
-            this.jumpToolStripMenuItem,
-            this.logToolStripMenuItem,
-            this.statsToolStripMenuItem,
-            this.scriptEditorToolStripMenuItem,
-            this.cosmeticsToolStripMenuItem,
-            this.botBuilderToolStripMenuItem,
-            this.stratBuilderToolStripMenuItem,
-            this.aS3InjectorToolStripMenuItem,
-            this.pluginsToolStripMenuItem,
-            this.updatesToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.debugToolStripMenuItem});
-            this.mainMenu.Location = new System.Drawing.Point(0, 0);
-            this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(1036, 24);
-            this.mainMenu.TabIndex = 0;
-            this.mainMenu.Text = "menuStrip1";
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // scriptsToolStripMenuItem
             // 
             this.scriptsToolStripMenuItem.Name = "scriptsToolStripMenuItem";
-            this.scriptsToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.scriptsToolStripMenuItem.Text = "Scripts";
             this.scriptsToolStripMenuItem.Click += new System.EventHandler(this.scriptsToolStripMenuItem_Click);
             // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.pluginsToolStripMenuItem,
+            this.relogToolStripMenuItem,
+            this.skillsToolStripMenuItem,
+            this.cosmeticToolStripMenuItem,
+            this.strategiesToolStripMenuItem,
+            this.as3ToolStripMenuItem,
+            this.statsToolStripMenuItem,
+            this.updatesToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // pluginsToolStripMenuItem
+            // 
+            this.pluginsToolStripMenuItem.Name = "pluginsToolStripMenuItem";
+            this.pluginsToolStripMenuItem.Text = "Plugins";
+            this.pluginsToolStripMenuItem.Click += new System.EventHandler(this.pluginsToolStripMenuItem_Click);
+            // 
+            // relogToolStripMenuItem
+            // 
+            this.relogToolStripMenuItem.Name = "relogToolStripMenuItem";
+            this.relogToolStripMenuItem.Text = "Auto Relogin";
+            this.relogToolStripMenuItem.Click += new System.EventHandler(this.relogToolStripMenuItem_Click);
+            // 
+            // skillsToolStripMenuItem
+            // 
+            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
+            this.skillsToolStripMenuItem.Text = "Skills";
+            this.skillsToolStripMenuItem.Click += new System.EventHandler(this.skillsToolStripMenuItem_Click);
+            // 
+            // cosmeticToolStripMenuItem
+            // 
+            this.cosmeticToolStripMenuItem.Name = "cosmeticToolStripMenuItem";
+            this.cosmeticToolStripMenuItem.Text = "Cosmetics";
+            this.cosmeticToolStripMenuItem.Click += new System.EventHandler(this.cosmeticToolStripMenuItem_Click);
+            // 
+            // strategiesToolStripMenuItem
+            // 
+            this.strategiesToolStripMenuItem.Name = "strategiesToolStripMenuItem";
+            this.strategiesToolStripMenuItem.Text = "Strategies";
+            this.strategiesToolStripMenuItem.Click += new System.EventHandler(this.strategiesToolStripMenuItem_Click);
+            // 
+            // as3ToolStripMenuItem
+            // 
+            this.as3ToolStripMenuItem.Name = "as3ToolStripMenuItem";
+            this.as3ToolStripMenuItem.Text = "As3 Injector";
+            this.as3ToolStripMenuItem.Click += new System.EventHandler(this.as3ToolStripMenuItem_Click);
+            // 
+            // statsToolStripMenuItem
+            // 
+            this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
+            this.statsToolStripMenuItem.Text = "Stats";
+            this.statsToolStripMenuItem.Click += new System.EventHandler(this.statsToolStripMenuItem_Click);
+            // 
+            // updatesToolStripMenuItem
+            // 
+            this.updatesToolStripMenuItem.Name = "updatesToolStripMenuItem";
+            this.updatesToolStripMenuItem.Text = "Updates";
+            this.updatesToolStripMenuItem.Click += new System.EventHandler(this.updatesToolStripMenuItem_Click);
+            // 
+            // mainMenu
+            // 
+            this.mainMenu.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.aboutToolStripMenuItem,
+            this.scriptsToolStripMenuItem,
+            this.optionsToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.packetsToolStripMenuItem,
+            this.jumpToolStripMenuItem,
+            this.loadersToolStripMenuItem,
+            this.bankToolStripMenuItem,
+            this.logsToolStripMenuItem,
+            this.debugToolStripMenuItem});
+            this.mainMenu.Location = new System.Drawing.Point(0, 0);
+            this.mainMenu.Name = "mainMenu";
+            // 
+            // 
+            // 
+            this.mainMenu.RootElement.AutoSize = true;
+            this.mainMenu.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.FitToAvailableSize;
+            this.mainMenu.RootElement.BorderHighlightColor = System.Drawing.Color.White;
+            this.mainMenu.RootElement.ScaleTransform = new System.Drawing.SizeF(1.05F, 1.05F);
+            this.mainMenu.RootElement.Shape = null;
+            this.mainMenu.RootElement.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.Default;
+            this.mainMenu.Size = new System.Drawing.Size(1044, 20);
+            this.mainMenu.TabIndex = 0;
+            this.mainMenu.ThemeName = "VisualStudio2012Dark";
+            // 
             // optionsToolStripMenuItem
             // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsToolStripMenuItem.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.botOptionsToolStripMenuItem,
             this.scriptOptionsToolStripMenuItem,
-            this.autoReloginToolStripMenuItem,
             this.applicationOptionsToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // botOptionsToolStripMenuItem
             // 
             this.botOptionsToolStripMenuItem.Name = "botOptionsToolStripMenuItem";
-            this.botOptionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.botOptionsToolStripMenuItem.Text = "Bot Options";
             this.botOptionsToolStripMenuItem.Click += new System.EventHandler(this.botOptionsToolStripMenuItem_Click);
             // 
             // scriptOptionsToolStripMenuItem
             // 
             this.scriptOptionsToolStripMenuItem.Name = "scriptOptionsToolStripMenuItem";
-            this.scriptOptionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.scriptOptionsToolStripMenuItem.Text = "Script Options";
             this.scriptOptionsToolStripMenuItem.Click += new System.EventHandler(this.scriptOptionsToolStripMenuItem_Click);
-            // 
-            // autoReloginToolStripMenuItem
-            // 
-            this.autoReloginToolStripMenuItem.Name = "autoReloginToolStripMenuItem";
-            this.autoReloginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.autoReloginToolStripMenuItem.Text = "Auto Relogin";
-            this.autoReloginToolStripMenuItem.Click += new System.EventHandler(this.autoReloginToolStripMenuItem_Click);
             // 
             // applicationOptionsToolStripMenuItem
             // 
             this.applicationOptionsToolStripMenuItem.Name = "applicationOptionsToolStripMenuItem";
-            this.applicationOptionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.applicationOptionsToolStripMenuItem.Text = "Application Options";
             this.applicationOptionsToolStripMenuItem.Click += new System.EventHandler(this.applicationOptionsToolStripMenuItem_Click);
             // 
             // packetsToolStripMenuItem
             // 
-            this.packetsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.packetsToolStripMenuItem.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.spammerToolStripMenuItem,
             this.loggerToolStripMenuItem,
             this.interceptorToolStripMenuItem});
             this.packetsToolStripMenuItem.Name = "packetsToolStripMenuItem";
-            this.packetsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.packetsToolStripMenuItem.Text = "Packets";
             // 
             // spammerToolStripMenuItem
             // 
             this.spammerToolStripMenuItem.Name = "spammerToolStripMenuItem";
-            this.spammerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.spammerToolStripMenuItem.Text = "Spammer";
             this.spammerToolStripMenuItem.Click += new System.EventHandler(this.spammerToolStripMenuItem_Click);
             // 
             // loggerToolStripMenuItem
             // 
             this.loggerToolStripMenuItem.Name = "loggerToolStripMenuItem";
-            this.loggerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loggerToolStripMenuItem.Text = "Logger";
             this.loggerToolStripMenuItem.Click += new System.EventHandler(this.loggerToolStripMenuItem_Click);
             // 
             // interceptorToolStripMenuItem
             // 
             this.interceptorToolStripMenuItem.Name = "interceptorToolStripMenuItem";
-            this.interceptorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.interceptorToolStripMenuItem.Text = "Interceptor";
             this.interceptorToolStripMenuItem.Click += new System.EventHandler(this.interceptorToolStripMenuItem_Click);
+            // 
+            // jumpToolStripMenuItem
+            // 
+            this.jumpToolStripMenuItem.Name = "jumpToolStripMenuItem";
+            this.jumpToolStripMenuItem.Text = "Jump";
+            this.jumpToolStripMenuItem.Click += new System.EventHandler(this.jumpToolStripMenuItem_Click);
             // 
             // loadersToolStripMenuItem
             // 
             this.loadersToolStripMenuItem.Name = "loadersToolStripMenuItem";
-            this.loadersToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.loadersToolStripMenuItem.Text = "Loaders";
             this.loadersToolStripMenuItem.Click += new System.EventHandler(this.loadersToolStripMenuItem_Click);
             // 
             // bankToolStripMenuItem
             // 
             this.bankToolStripMenuItem.Name = "bankToolStripMenuItem";
-            this.bankToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.bankToolStripMenuItem.Text = "Bank";
             this.bankToolStripMenuItem.Click += new System.EventHandler(this.bankToolStripMenuItem_Click);
             // 
-            // skillsToolStripMenuItem
+            // logsToolStripMenuItem
             // 
-            this.skillsToolStripMenuItem.Name = "skillsToolStripMenuItem";
-            this.skillsToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.skillsToolStripMenuItem.Text = "Skills";
-            this.skillsToolStripMenuItem.Click += new System.EventHandler(this.skillsToolStripMenuItem_Click);
-            // 
-            // jumpToolStripMenuItem
-            // 
-            this.jumpToolStripMenuItem.Name = "jumpToolStripMenuItem";
-            this.jumpToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.jumpToolStripMenuItem.Text = "Jump";
-            this.jumpToolStripMenuItem.Click += new System.EventHandler(this.jumpToolStripMenuItem_Click);
-            // 
-            // logToolStripMenuItem
-            // 
-            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.logToolStripMenuItem.Text = "Logs";
-            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
-            // 
-            // statsToolStripMenuItem
-            // 
-            this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
-            this.statsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.statsToolStripMenuItem.Text = "Stats";
-            this.statsToolStripMenuItem.Click += new System.EventHandler(this.statsToolStripMenuItem_Click);
-            // 
-            // scriptEditorToolStripMenuItem
-            // 
-            this.scriptEditorToolStripMenuItem.Name = "scriptEditorToolStripMenuItem";
-            this.scriptEditorToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.scriptEditorToolStripMenuItem.Text = "Script Editor";
-            this.scriptEditorToolStripMenuItem.Visible = false;
-            this.scriptEditorToolStripMenuItem.Click += new System.EventHandler(this.scriptEditorToolStripMenuItem_Click);
-            // 
-            // cosmeticsToolStripMenuItem
-            // 
-            this.cosmeticsToolStripMenuItem.Name = "cosmeticsToolStripMenuItem";
-            this.cosmeticsToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.cosmeticsToolStripMenuItem.Text = "Cosmetics";
-            this.cosmeticsToolStripMenuItem.Click += new System.EventHandler(this.cosmeticsToolStripMenuItem_Click);
-            // 
-            // botBuilderToolStripMenuItem
-            // 
-            this.botBuilderToolStripMenuItem.Name = "botBuilderToolStripMenuItem";
-            this.botBuilderToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.botBuilderToolStripMenuItem.Text = "Bot Builder";
-            this.botBuilderToolStripMenuItem.Visible = false;
-            this.botBuilderToolStripMenuItem.Click += new System.EventHandler(this.botBuilderToolStripMenuItem_Click);
-            // 
-            // stratBuilderToolStripMenuItem
-            // 
-            this.stratBuilderToolStripMenuItem.Name = "stratBuilderToolStripMenuItem";
-            this.stratBuilderToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.stratBuilderToolStripMenuItem.Text = "Strategies";
-            this.stratBuilderToolStripMenuItem.Click += new System.EventHandler(this.stratBuilderToolStripMenuItem_Click);
-            // 
-            // aS3InjectorToolStripMenuItem
-            // 
-            this.aS3InjectorToolStripMenuItem.Name = "aS3InjectorToolStripMenuItem";
-            this.aS3InjectorToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.aS3InjectorToolStripMenuItem.Text = "AS3 Injector";
-            this.aS3InjectorToolStripMenuItem.Click += new System.EventHandler(this.aS3InjectorToolStripMenuItem_Click);
-            // 
-            // pluginsToolStripMenuItem
-            // 
-            this.pluginsToolStripMenuItem.Name = "pluginsToolStripMenuItem";
-            this.pluginsToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.pluginsToolStripMenuItem.Text = "Plugins";
-            this.pluginsToolStripMenuItem.Click += new System.EventHandler(this.pluginsToolStripMenuItem_Click);
-            // 
-            // updatesToolStripMenuItem
-            // 
-            this.updatesToolStripMenuItem.Name = "updatesToolStripMenuItem";
-            this.updatesToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.updatesToolStripMenuItem.Text = "Updates";
-            this.updatesToolStripMenuItem.Click += new System.EventHandler(this.updatesToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.discordToolStripMenuItem,
-            this.documentationToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // discordToolStripMenuItem
-            // 
-            this.discordToolStripMenuItem.Name = "discordToolStripMenuItem";
-            this.discordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.discordToolStripMenuItem.Text = "Discord";
-            this.discordToolStripMenuItem.Click += new System.EventHandler(this.discordToolStripMenuItem_Click);
-            // 
-            // documentationToolStripMenuItem
-            // 
-            this.documentationToolStripMenuItem.Name = "documentationToolStripMenuItem";
-            this.documentationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.documentationToolStripMenuItem.Text = "Documentation";
-            this.documentationToolStripMenuItem.Click += new System.EventHandler(this.documentationToolStripMenuItem_Click);
+            this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
+            this.logsToolStripMenuItem.Text = "Logs";
+            this.logsToolStripMenuItem.Click += new System.EventHandler(this.logsToolStripMenuItem_Click);
             // 
             // debugToolStripMenuItem
             // 
-            this.debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.debugToolStripMenuItem.EnableRippleAnimation = true;
+            this.debugToolStripMenuItem.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.reloadFlashToolStripMenuItem,
             this.setNameToolStripMenuItem,
             this.hidePlayersToolStripMenuItem,
             this.addDebugHandlersToolStripMenuItem});
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.debugToolStripMenuItem.Text = "Debug";
             // 
             // reloadFlashToolStripMenuItem
             // 
             this.reloadFlashToolStripMenuItem.Name = "reloadFlashToolStripMenuItem";
-            this.reloadFlashToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.reloadFlashToolStripMenuItem.Text = "Reload Flash";
             this.reloadFlashToolStripMenuItem.Click += new System.EventHandler(this.reloadFlashToolStripMenuItem_Click);
             // 
             // setNameToolStripMenuItem
             // 
             this.setNameToolStripMenuItem.Name = "setNameToolStripMenuItem";
-            this.setNameToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.setNameToolStripMenuItem.Text = "Set Name";
             this.setNameToolStripMenuItem.Click += new System.EventHandler(this.setNameToolStripMenuItem_Click);
             // 
             // hidePlayersToolStripMenuItem
             // 
             this.hidePlayersToolStripMenuItem.Name = "hidePlayersToolStripMenuItem";
-            this.hidePlayersToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.hidePlayersToolStripMenuItem.Text = "Hide Players";
             this.hidePlayersToolStripMenuItem.Click += new System.EventHandler(this.hidePlayersToolStripMenuItem_Click);
             // 
             // addDebugHandlersToolStripMenuItem
             // 
             this.addDebugHandlersToolStripMenuItem.Name = "addDebugHandlersToolStripMenuItem";
-            this.addDebugHandlersToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.addDebugHandlersToolStripMenuItem.Text = "Add Debug Handlers";
             this.addDebugHandlersToolStripMenuItem.Click += new System.EventHandler(this.addDebugHandlersToolStripMenuItem_Click);
             // 
             // gameContainer
             // 
             this.gameContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gameContainer.Location = new System.Drawing.Point(0, 24);
+            this.gameContainer.Location = new System.Drawing.Point(0, 20);
             this.gameContainer.Name = "gameContainer";
-            this.gameContainer.Size = new System.Drawing.Size(1036, 595);
+            this.gameContainer.Size = new System.Drawing.Size(1044, 605);
             this.gameContainer.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 619);
+            this.ClientSize = new System.Drawing.Size(1044, 625);
             this.Controls.Add(this.gameContainer);
             this.Controls.Add(this.mainMenu);
-            this.MainMenuStrip = this.mainMenu;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "MainForm";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
+            this.RootElement.FocusBorderColor = System.Drawing.Color.Gray;
+            this.RootElement.HighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.RootElement.RippleAnimationColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Text = "RBot";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.mainMenu.ResumeLayout(false);
-            this.mainMenu.PerformLayout();
+            this.ThemeName = "VisualStudio2012Dark";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm2_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm2_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainForm2_KeyPress);
+            ((System.ComponentModel.ISupportInitialize)(this.mainMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,40 +317,36 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip mainMenu;
-        private System.Windows.Forms.ToolStripMenuItem debugToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reloadFlashToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setNameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hidePlayersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scriptsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem botOptionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scriptOptionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem autoReloginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem applicationOptionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem skillsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem packetsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem spammerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loggerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem interceptorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loadersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bankToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jumpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aS3InjectorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem discordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem documentationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pluginsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updatesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addDebugHandlersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scriptEditorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cosmeticsToolStripMenuItem;
+        private Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme1;
+        private Telerik.WinControls.UI.RadMenuItem aboutToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem scriptsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem toolsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem cosmeticToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenu mainMenu;
+        private Telerik.WinControls.UI.RadMenuItem pluginsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem relogToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem skillsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem strategiesToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem as3ToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem statsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem updatesToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem optionsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem botOptionsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem scriptOptionsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem applicationOptionsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem packetsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem loadersToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem bankToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem logsToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem debugToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem reloadFlashToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem setNameToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem hidePlayersToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem addDebugHandlersToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem spammerToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem loggerToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem interceptorToolStripMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem jumpToolStripMenuItem;
         private System.Windows.Forms.Panel gameContainer;
-        private System.Windows.Forms.ToolStripMenuItem botBuilderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stratBuilderToolStripMenuItem;
     }
 }
-

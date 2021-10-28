@@ -12,17 +12,18 @@ namespace RBot.Repos
 {
     public class ScriptFetcher
     {
-        public const string BaseUrl = "https://raw.githubusercontent.com/rodit/rbot-scripts/master/repos";
+        public const string BaseUrl = "https://raw.githubusercontent.com/Quiet-ORG/rbot-scripts/master/repos";
 
         public static async Task<List<ScriptRepo>> GetRepos()
         {
             using (RBotWebClient wc = new RBotWebClient())
             {
-                return (await wc.DownloadStringTaskAsync(BaseUrl)).Split('\n').Select(l => l.Trim().Split('|')).Where(p => p.Length == 3).Select(p => new ScriptRepo()
+                return (await wc.DownloadStringTaskAsync(BaseUrl)).Split('\n').Select(l => l.Trim().Split('|')).Where(p => p.Length == 4).Select(p => new ScriptRepo()
                 {
                     Username = p[0],
                     Name = p[1],
-                    Author = p[2]
+                    Extension = p[2],
+                    Author = p[3]
                 }).ToList();
             }
         }

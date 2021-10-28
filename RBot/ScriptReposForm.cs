@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Reflection;
 
 using RBot.Repos;
 using RBot.Utils;
@@ -76,7 +72,7 @@ namespace RBot
             _UIState(true);
         }
 
-        private async void ScriptReposForm_Load(object sender, EventArgs e)
+        private async void ScriptReposForm2_Load(object sender, EventArgs e)
         {
             await _Refresh();
         }
