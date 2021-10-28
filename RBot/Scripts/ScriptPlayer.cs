@@ -752,7 +752,7 @@ namespace RBot
             if(items.Length == quantities.Length)
             {
                 while(!Bot.ShouldExit()
-                    && Enumerable.Range(0, items.Length).All(i => (!tempItems && Bot.Inventory.Contains(items[i], quantities[i])) 
+                    && Enumerable.Range(0, items.Length).All(i => (!tempItems && Bot.Inventory.Contains(items[i], quantities[i]))
                                                                 || (tempItems && Bot.Inventory.ContainsTempItem(items[i], quantities[i]))))
                 {
                     Kill(name);
@@ -926,6 +926,7 @@ namespace RBot
         /// Rests the player (equivilent to clicking the rest button on the UI).
         /// </summary>
         /// <param name="full">If true, the bot will wait until the player's HP and MP are full.</param>
+        /// <param name="timeout"></param>
         public void Rest(bool full = false, int timeout = -1)
         {
             if (Bot.Options.SafeTimings)

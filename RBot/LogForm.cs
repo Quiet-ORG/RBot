@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Diagnostics;
 using System.IO;
@@ -10,6 +7,7 @@ using System.Windows.Forms;
 
 using RBot.Flash;
 using RBot.Utils;
+using Telerik.WinControls.UI;
 
 namespace RBot
 {
@@ -22,7 +20,7 @@ namespace RBot
             Debug.Listeners.Add(new DebugListener(this));
         }
 
-        private void LogForm_Load(object sender, EventArgs e)
+        private void LogForm2_Load(object sender, EventArgs e)
         {
             FlashUtil.FlashError += FlashUtil_FlashError;
         }
@@ -39,9 +37,9 @@ namespace RBot
             }
         }
 
-        private void _AppendText(TextBox tb, string text)
+        private void _AppendText(RadTextBox tb, string text)
         {
-            if(Visible)
+            if (Visible)
                 tb.CheckedInvoke(() => tb.AppendText(text));
         }
 
@@ -55,7 +53,7 @@ namespace RBot
             }
         }
 
-        private void _ClearText(TextBox tb)
+        private void _ClearText(RadTextBox tb)
         {
             tb.CheckedInvoke(tb.Clear);
         }

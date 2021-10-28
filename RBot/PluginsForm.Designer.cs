@@ -33,6 +33,7 @@
             this.btnUnload = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.propsPluginOpts = new System.Windows.Forms.PropertyGrid();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // lbPlugins
@@ -96,7 +97,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "PluginsForm";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
             this.Text = "Plugins";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
         }

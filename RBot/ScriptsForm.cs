@@ -118,7 +118,7 @@ namespace RBot
         {
             if (_expanded)
             {
-                Height = 167;
+                Height = 158;
                 btnAdvanced.Text = ">>";
             }
             else
@@ -130,7 +130,7 @@ namespace RBot
             _expanded = !_expanded;
         }
 
-        private void chkRunOnExit_CheckedChanged(object sender, EventArgs e)
+        private void chkRunOnExit_CheckedChanged(object sender, Telerik.WinControls.UI.StateChangedEventArgs e)
         {
             Bot.Options.RunOnExit = chkRunOnExit.Checked ? txtRunOnExit.Text : null;
         }

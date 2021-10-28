@@ -30,12 +30,19 @@
         {
             this.cbCell = new System.Windows.Forms.ComboBox();
             this.cbPads = new System.Windows.Forms.ComboBox();
-            this.btnJump = new System.Windows.Forms.Button();
-            this.btnGetCurrent = new System.Windows.Forms.Button();
+            this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
+            this.btnJump = new Telerik.WinControls.UI.RadButton();
+            this.btnGetCurrent = new Telerik.WinControls.UI.RadButton();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJump)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGetCurrent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // cbCell
             // 
+            this.cbCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cbCell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCell.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbCell.FormattingEnabled = true;
             this.cbCell.Location = new System.Drawing.Point(12, 12);
             this.cbCell.Name = "cbCell";
@@ -44,6 +51,9 @@
             // 
             // cbPads
             // 
+            this.cbPads.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cbPads.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbPads.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbPads.FormattingEnabled = true;
             this.cbPads.Items.AddRange(new object[] {
             "Spawn",
@@ -64,9 +74,9 @@
             this.btnJump.Location = new System.Drawing.Point(156, 39);
             this.btnJump.Name = "btnJump";
             this.btnJump.Size = new System.Drawing.Size(138, 23);
-            this.btnJump.TabIndex = 2;
+            this.btnJump.TabIndex = 4;
             this.btnJump.Text = "Jump";
-            this.btnJump.UseVisualStyleBackColor = true;
+            this.btnJump.ThemeName = "VisualStudio2012Dark";
             this.btnJump.Click += new System.EventHandler(this.btnJump_Click);
             // 
             // btnGetCurrent
@@ -74,24 +84,33 @@
             this.btnGetCurrent.Location = new System.Drawing.Point(12, 39);
             this.btnGetCurrent.Name = "btnGetCurrent";
             this.btnGetCurrent.Size = new System.Drawing.Size(138, 23);
-            this.btnGetCurrent.TabIndex = 3;
+            this.btnGetCurrent.TabIndex = 5;
             this.btnGetCurrent.Text = "Get Current";
-            this.btnGetCurrent.UseVisualStyleBackColor = true;
+            this.btnGetCurrent.ThemeName = "VisualStudio2012Dark";
             this.btnGetCurrent.Click += new System.EventHandler(this.btnGetCurrent_Click);
             // 
             // JumpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 73);
+            this.ClientSize = new System.Drawing.Size(307, 76);
             this.Controls.Add(this.btnGetCurrent);
             this.Controls.Add(this.btnJump);
             this.Controls.Add(this.cbPads);
             this.Controls.Add(this.cbCell);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "JumpForm";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
             this.Text = "Jump";
+            this.ThemeName = "VisualStudio2012Dark";
+            ((System.ComponentModel.ISupportInitialize)(this.btnJump)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGetCurrent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -100,7 +119,8 @@
 
         private System.Windows.Forms.ComboBox cbCell;
         private System.Windows.Forms.ComboBox cbPads;
-        private System.Windows.Forms.Button btnJump;
-        private System.Windows.Forms.Button btnGetCurrent;
+        private Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme1;
+        private Telerik.WinControls.UI.RadButton btnJump;
+        private Telerik.WinControls.UI.RadButton btnGetCurrent;
     }
 }
