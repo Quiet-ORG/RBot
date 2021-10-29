@@ -123,7 +123,7 @@ namespace RBot
             this.btnSaveDebug.TabIndex = 0;
             this.btnSaveDebug.Text = "Save";
             this.btnSaveDebug.ThemeName = "VisualStudio2012Dark";
-            this.btnSaveDebug.Click += new System.EventHandler(this.btnClearDebug_Click);
+            this.btnSaveDebug.Click += new System.EventHandler(this.btnSaveDebug_Click);
             // 
             // splitPanel2
             // 
@@ -151,7 +151,7 @@ namespace RBot
             this.btnClearDebug.TabIndex = 0;
             this.btnClearDebug.Text = "Clear";
             this.btnClearDebug.ThemeName = "VisualStudio2012Dark";
-            this.btnClearDebug.Click += new System.EventHandler(this.btnSaveDebug_Click);
+            this.btnClearDebug.Click += new System.EventHandler(this.btnClearDebug_Click);
             // 
             // txtDebugLog
             // 
@@ -265,7 +265,6 @@ namespace RBot
             this.splitPanel3.TabIndex = 0;
             this.splitPanel3.TabStop = false;
             this.splitPanel3.Text = "splitPanel3";
-            this.splitPanel3.ThemeName = "VisualStudio2012Dark";
             // 
             // btnSaveScript
             // 
@@ -293,7 +292,6 @@ namespace RBot
             this.splitPanel4.TabIndex = 1;
             this.splitPanel4.TabStop = false;
             this.splitPanel4.Text = "splitPanel4";
-            this.splitPanel4.ThemeName = "VisualStudio2012Dark";
             // 
             // btnClearScript
             // 

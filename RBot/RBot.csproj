@@ -358,6 +358,7 @@
     <Compile Include="GenericOptionsForm.Designer.cs">
       <DependentUpon>GenericOptionsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="HideForm.cs">
       <SubType>Form</SubType>
     </Compile>

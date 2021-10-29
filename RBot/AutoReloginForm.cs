@@ -26,11 +26,6 @@ namespace RBot
             Bot.Options.BindControl("SafeRelogin", chkSafeRelogin);
         }
 
-        private void AutoReloginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void AutoReloginForm_Shown(object sender, EventArgs e)
         {
             if (cbServers.Items.Count == 0)

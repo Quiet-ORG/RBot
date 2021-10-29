@@ -305,9 +305,9 @@ namespace RBot
             this.RootElement.RippleAnimationColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Text = "RBot";
             this.ThemeName = "VisualStudio2012Dark";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm2_FormClosing);
-            this.Load += new System.EventHandler(this.MainForm2_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainForm2_KeyPress);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MainForm_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.mainMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);

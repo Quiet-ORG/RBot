@@ -50,18 +50,14 @@ namespace RBot
             });
 
             KeyPreview = true;
-            KeyPress += MainForm2_KeyPress;
-            FormClosing += MainForm2_FormClosing;
+            KeyPress += MainForm_KeyPress;
+            FormClosing += MainForm_FormClosing;
 
+            debugToolStripMenuItem.Visibility = Debugger.IsAttached ? ElementVisibility.Visible : ElementVisibility.Hidden;
             if (Debugger.IsAttached)
             {
-                debugToolStripMenuItem.Visibility = ElementVisibility.Visible;
                 Forms.Log.Show();
                 Debug.WriteLine("Debugger is attached.");
-            }
-            else
-            {
-                debugToolStripMenuItem.Visibility = ElementVisibility.Hidden;
             }
         }
 
@@ -98,16 +94,15 @@ namespace RBot
             }
         }
 
-        private void MainForm2_KeyPress(object sender, KeyPressEventArgs e)
+        private void MainForm_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == '#')
                 Forms.Console.Show();
         }
 
-        private void MainForm2_FormClosing(object sender, FormClosingEventArgs e)
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Bot.Exit();
-            Environment.Exit(0);
         }
 
         public void InitFlash()
@@ -144,15 +139,16 @@ namespace RBot
             EoLHook.Unhook();
         }
 
-        private async void MainForm2_Load(object sender, EventArgs e)
+        private async void MainForm_Load(object sender, EventArgs e)
         {
             if (AppRuntime.Options.Get<bool>("updates.check"))
             {
                 List<UpdateInfo> infos = await UpdateChecker.GetReleases();
                 UpdateInfo latest = infos.OrderByDescending(x => x.ParsedVersion).FirstOrDefault(x => AppRuntime.Options.Get<bool>("updates.beta") || !x.Prerelease);
-                if (latest != null && latest.ParsedVersion.CompareTo(Version.Parse(Application.ProductVersion)) > 0)
+                if (latest?.ParsedVersion.CompareTo(Version.Parse(Application.ProductVersion)) > 0)
                 {
-                    if (MessageBox.Show($"An update is available:\r\n{latest.Name}\r\nVersion: {latest.Version}\r\n{(latest.Prerelease ? "This is a prerelease update.\r\n" : "")}Would you like to download it?", "Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    RadMessageBox.SetThemeName("VisualStudio2012Dark");
+                    if (RadMessageBox.Show($"An update is available:\r\n{latest.Name}\r\nVersion: {latest.Version}\r\n{(latest.Prerelease ? "This is a prerelease update.\r\n" : "")}Would you like to download it?", "Update Available", MessageBoxButtons.YesNo, RadMessageIcon.Info) == DialogResult.Yes)
                         Process.Start(latest.URL);
                 }
             }
@@ -221,11 +217,13 @@ namespace RBot
                     ScriptManager.LoadScriptConfig(compiled);
                     if (Bot.Config.Options.Count > 0)
                     {
-                        using (GenericOptionsForm gof = new GenericOptionsForm() { Container = Bot.Config })
-                            gof.ShowDialog();
+                        using GenericOptionsForm gof = new GenericOptionsForm() { Container = Bot.Config };
+                        gof.ShowDialog();
                     }
                     else
+                    {
                         MessageBox.Show("The loaded script has no options to configure.", "No Options", MessageBoxButtons.OK);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -236,8 +234,8 @@ namespace RBot
 
         private void applicationOptionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (GenericOptionsForm gof = new GenericOptionsForm() { Container = AppRuntime.Options })
-                gof.ShowDialog();
+            using GenericOptionsForm gof = new GenericOptionsForm() { Container = AppRuntime.Options };
+            gof.ShowDialog();
         }
         // End Options
 

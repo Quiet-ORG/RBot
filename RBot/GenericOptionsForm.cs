@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using RBot.Options;
+using Telerik.WinControls.UI;
 
 namespace RBot
 {
-    public partial class GenericOptionsForm : Form
+    public partial class GenericOptionsForm : RadForm
     {
         private OptionContainer _container;
         public OptionContainer Container

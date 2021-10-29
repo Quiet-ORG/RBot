@@ -29,13 +29,21 @@
         private void InitializeComponent()
         {
             this.cbServers = new System.Windows.Forms.ComboBox();
-            this.chkRelogin = new System.Windows.Forms.CheckBox();
-            this.chkReloginAny = new System.Windows.Forms.CheckBox();
-            this.chkSafeRelogin = new System.Windows.Forms.CheckBox();
+            this.visualStudio2012DarkTheme1 = new Telerik.WinControls.Themes.VisualStudio2012DarkTheme();
+            this.chkRelogin = new Telerik.WinControls.UI.RadCheckBox();
+            this.chkReloginAny = new Telerik.WinControls.UI.RadCheckBox();
+            this.chkSafeRelogin = new Telerik.WinControls.UI.RadCheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.chkRelogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkReloginAny)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkSafeRelogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // cbServers
             // 
+            this.cbServers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cbServers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbServers.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbServers.FormattingEnabled = true;
             this.cbServers.Location = new System.Drawing.Point(12, 12);
             this.cbServers.Name = "cbServers";
@@ -44,33 +52,30 @@
             // 
             // chkRelogin
             // 
-            this.chkRelogin.AutoSize = true;
             this.chkRelogin.Location = new System.Drawing.Point(12, 39);
             this.chkRelogin.Name = "chkRelogin";
-            this.chkRelogin.Size = new System.Drawing.Size(87, 17);
-            this.chkRelogin.TabIndex = 1;
+            this.chkRelogin.Size = new System.Drawing.Size(88, 18);
+            this.chkRelogin.TabIndex = 4;
             this.chkRelogin.Text = "Auto Relogin";
-            this.chkRelogin.UseVisualStyleBackColor = true;
+            this.chkRelogin.ThemeName = "VisualStudio2012Dark";
             // 
             // chkReloginAny
             // 
-            this.chkReloginAny.AutoSize = true;
             this.chkReloginAny.Location = new System.Drawing.Point(12, 62);
             this.chkReloginAny.Name = "chkReloginAny";
-            this.chkReloginAny.Size = new System.Drawing.Size(133, 17);
-            this.chkReloginAny.TabIndex = 2;
+            this.chkReloginAny.Size = new System.Drawing.Size(133, 18);
+            this.chkReloginAny.TabIndex = 5;
             this.chkReloginAny.Text = "Relogin To Any Server";
-            this.chkReloginAny.UseVisualStyleBackColor = true;
+            this.chkReloginAny.ThemeName = "VisualStudio2012Dark";
             // 
             // chkSafeRelogin
             // 
-            this.chkSafeRelogin.AutoSize = true;
             this.chkSafeRelogin.Location = new System.Drawing.Point(12, 85);
             this.chkSafeRelogin.Name = "chkSafeRelogin";
-            this.chkSafeRelogin.Size = new System.Drawing.Size(87, 17);
-            this.chkSafeRelogin.TabIndex = 3;
+            this.chkSafeRelogin.Size = new System.Drawing.Size(85, 18);
+            this.chkSafeRelogin.TabIndex = 6;
             this.chkSafeRelogin.Text = "Safe Relogin";
-            this.chkSafeRelogin.UseVisualStyleBackColor = true;
+            this.chkSafeRelogin.ThemeName = "VisualStudio2012Dark";
             // 
             // AutoReloginForm
             // 
@@ -84,8 +89,16 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "AutoReloginForm";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
             this.Text = "Auto Relogin";
-            this.Load += new System.EventHandler(this.AutoReloginForm_Load);
+            this.ThemeName = "VisualStudio2012Dark";
+            ((System.ComponentModel.ISupportInitialize)(this.chkRelogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkReloginAny)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkSafeRelogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,8 +107,9 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbServers;
-        private System.Windows.Forms.CheckBox chkRelogin;
-        private System.Windows.Forms.CheckBox chkReloginAny;
-        private System.Windows.Forms.CheckBox chkSafeRelogin;
+        private Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme1;
+        private Telerik.WinControls.UI.RadCheckBox chkRelogin;
+        private Telerik.WinControls.UI.RadCheckBox chkReloginAny;
+        private Telerik.WinControls.UI.RadCheckBox chkSafeRelogin;
     }
 }

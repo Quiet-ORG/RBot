@@ -65,10 +65,5 @@ namespace RBot
                 MessageBox.Show("Error running snippet:\r\n" + ex);
             }
         }
-
-        private void ConsoleForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

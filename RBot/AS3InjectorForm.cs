@@ -15,7 +15,7 @@ namespace RBot
 {
     public partial class AS3InjectorForm : HideForm
     {
-        const string DefaultText = "package {\r\n\r\n\timport flash.display.*;\r\n\timport flash.external.*;\r\n\r\n\tpublic class Patch extends MovieClip {\r\n\r\n        private var game:*;\r\n\r\n\t\tpublic function run(root:*) {\r\n            game = root.getGame();\r\n            \r\n            \r\n\t\t}\r\n\t}\r\n}";
+        public const string DefaultText = "package {\r\n\r\n\timport flash.display.*;\r\n\timport flash.external.*;\r\n\r\n\tpublic class Patch extends MovieClip {\r\n\r\n        private var game:*;\r\n\r\n\t\tpublic function run(root:*) {\r\n            game = root.getGame();\r\n            \r\n            \r\n\t\t}\r\n\t}\r\n}";
 
         public string CurrentFile { get; set; }
         private bool _modified;
@@ -58,15 +58,13 @@ namespace RBot
         {
             if (!Modified || MessageBox.Show("The current script has unsaved changes which will be lost if another script is opened. Are you sure you would like to open a new script?", "Unsaved Changes", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                using (OpenFileDialog ofd = new OpenFileDialog())
+                using OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "ActionScript Files (*.as)|*.as";
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    ofd.Filter = "ActionScript Files (*.as)|*.as";
-                    if (ofd.ShowDialog() == DialogResult.OK)
-                    {
-                        CurrentFile = ofd.FileName;
-                        txtCode.Text = File.ReadAllText(CurrentFile);
-                        Modified = false;
-                    }
+                    CurrentFile = ofd.FileName;
+                    txtCode.Text = File.ReadAllText(CurrentFile);
+                    Modified = false;
                 }
             }
         }
@@ -74,7 +72,9 @@ namespace RBot
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (CurrentFile == null)
+            {
                 saveAsToolStripMenuItem.PerformClick();
+            }
             else
             {
                 File.WriteAllText(CurrentFile, txtCode.Text);
@@ -84,15 +84,13 @@ namespace RBot
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (SaveFileDialog sfd = new SaveFileDialog())
+            using SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "ActionScript Files (*.as)|*.as";
+            if (sfd.ShowDialog() == DialogResult.OK)
             {
-                sfd.Filter = "ActionScript Files (*.as)|*.as";
-                if (sfd.ShowDialog() == DialogResult.OK)
-                {
-                    CurrentFile = sfd.FileName;
-                    Modified = false;
-                    File.WriteAllText(CurrentFile, txtCode.Text);
-                }
+                CurrentFile = sfd.FileName;
+                Modified = false;
+                File.WriteAllText(CurrentFile, txtCode.Text);
             }
         }
 
@@ -127,7 +125,9 @@ namespace RBot
                     FlashUtil.Call("injectScript", new Uri(Path.Combine(Environment.CurrentDirectory, "tmp", "Patch.swf")).AbsoluteUri);
                 }
                 else
-                    MessageBox.Show($"Compiler exited with code {p.ExitCode}:\r\n{sb.ToString()}", "Compile Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                {
+                    MessageBox.Show($"Compiler exited with code {p.ExitCode}:\r\n{sb}", "Compile Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             });
 
             injectToolStripMenuItem.Text = "Inject (Ctrl+F5)";
