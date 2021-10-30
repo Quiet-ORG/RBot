@@ -337,6 +337,7 @@ ASALocalRun/
 .localhistory/
 
 # BeatPulse healthcheck temp database
+RawBot
 healthchecksdb
 RBot/rbot_blank.swf
 RBot/Properties/licenses.licx
