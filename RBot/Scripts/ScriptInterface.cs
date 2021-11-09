@@ -19,7 +19,7 @@ namespace RBot
     public class ScriptInterface
     {
         private static ScriptInterface _instance;
-        public static ScriptInterface Instance => _instance ?? (_instance = new ScriptInterface());
+        public static ScriptInterface Instance => _instance ??= new ScriptInterface();
 
         /// <summary>
         /// An object holding options for the current bot.
@@ -508,8 +508,8 @@ namespace RBot
                                 break;
 
                             case "ct":
-                                dynamic p = data.p == null ? null : data.p[Player.Username.ToLower()];
-                                if (p != null && p.intHP == 0)
+                                dynamic p = data.p?[Player.Username.ToLower()];
+                                if (p?.intHP == 0)
                                 {
                                     Stats.Deaths++;
                                     Events.OnPlayerDeath();
@@ -553,13 +553,10 @@ namespace RBot
                             case "sAct":
                                 if (AppRuntime.Options.Get<bool>("secret.zmana"))
                                 {
-                                    using (FlashArray<object> skills = FlashObject<object>.Create("world.actions.active").ToArray())
+                                    foreach (FlashObject<object> skill in FlashObject<object>.Create("world.actions.active").ToArray())
                                     {
-                                        foreach (FlashObject<object> skill in skills)
-                                        {
-                                            using (FlashObject<int> propMp = skill.GetChild<int>("mp"))
-                                                propMp.Value = 0;
-                                        }
+                                        using FlashObject<int> propMp = skill.GetChild<int>("mp");
+                                        propMp.Value = 0;
                                     }
                                 }
                                 break;
@@ -686,7 +683,9 @@ namespace RBot
                         _Relogin(Options.AutoReloginAny || (!Options.SafeRelogin && !kicked) ? 5000 : 70000, wasRunning || (_reloginCts?.IsCancellationRequested ?? false));
                     }
                     else if (!Player.LoggedIn && hasLoggedIn)
+                    {
                         Runtime.BankLoaded = false;
+                    }
 
                     _limit.LimitedRun("connDetail", 100, () =>
                     {
@@ -716,7 +715,10 @@ namespace RBot
                             }
                         }
                         else
+                        {
                             lastConnChange = Environment.TickCount;
+                        }
+
                         lastConnDetail = connDetail;
                     });
 
@@ -772,7 +774,10 @@ namespace RBot
                     _reloginCts = null;
                 }
                 else
+                {
                     Log("Relogin was cancelled or unsuccessful.");
+                }
+
                 _reloginTask = null;
             });
         }

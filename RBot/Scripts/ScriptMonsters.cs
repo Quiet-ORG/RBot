@@ -27,8 +27,7 @@ namespace RBot
         /// </summary>
         /// <param name="name">The name of the monster whose existence should be checked.</param>
         /// <returns>Whether the specified monster exists and is alive in the current cell.</returns>
-        public bool Exists(string name) => CurrentMonsters.Find(m => name == "*" || m.Name.Equals(name, StringComparison.OrdinalIgnoreCase) && m.Alive) != null;
-
+        public bool Exists(string name) => CurrentMonsters.Find(m => name == "*" || (m.Name.Equals(name, StringComparison.OrdinalIgnoreCase) && m.Alive)) != null;
         public bool TryGetMonster(string name, out Monster monster)
         {
             monster = CurrentMonsters.Find(m => name == "*" || m.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
@@ -41,7 +40,6 @@ namespace RBot
         public Dictionary<string, List<Monster>> GetCellMonsters()
         {
             Dictionary<string, List<Monster>> monsters = new Dictionary<string, List<Monster>>();
-            List<Monster> mapmons = new List<Monster>();
             foreach (string cell in Bot.Map.Cells)
                 monsters[cell] = GetMonstersByCell(cell);
             return monsters;

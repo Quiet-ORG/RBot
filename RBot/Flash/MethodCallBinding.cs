@@ -42,7 +42,7 @@ namespace RBot.Flash
                 _defaultProviderSet = true;
             }
 
-            Type retType = (args.Method as MethodInfo).ReturnType;
+            Type retType = (args.Method as MethodInfo)?.ReturnType;
 
             try
             {
@@ -52,7 +52,9 @@ namespace RBot.Flash
                     args.ReturnValue = retType == typeof(void) ? null : JsonConvert.DeserializeObject(ret, retType);
                 }
                 else
-                    args.ReturnValue = FlashUtil.Call(Name, (args.Method as MethodInfo).ReturnType, args.Arguments.ToArray());
+                {
+                    args.ReturnValue = FlashUtil.Call(Name, (args.Method as MethodInfo)?.ReturnType, args.Arguments.ToArray());
+                }
             }
             catch
             {

@@ -409,14 +409,14 @@ package xyz.rodit.rbot
 			instance.game.sfc.addEventListener(SFSEvent.onDebugMessage, packetReceived);
 		}
 		
-		public static function magnetize():void
+		public static function magnetise():void
 		{
 			var target:* = instance.game.world.myAvatar.target;
-			if (target)
+			if (target != null)
 			{
 				target.pMC.x = instance.game.world.myAvatar.pMC.x;
 				target.pMC.y = instance.game.world.myAvatar.pMC.y;
-			}
+			};
 		}
 		
 		public static function infiniteRange():void
@@ -616,6 +616,20 @@ package xyz.rodit.rbot
 				instance.external.call("packet", packet.params.message.split(":", 2)[1].trim());
 			}
 		}
+		public static function disableDeathAd(enable:Boolean):void
+		{
+			instance.game.userPreference.data.bDeathAd = !enable;
+		}
+		
+		public static function UserID():int
+        {
+            return instance.game.world.myAvatar.uid;
+        }
+		
+        public static function Gender():String
+        {
+            return '"' + instance.game.world.myAvatar.objData.strGender.toUpperCase() + '"';
+        }
 		
 		public static function test():String
 		{

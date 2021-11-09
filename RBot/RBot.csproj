@@ -85,6 +85,9 @@
       <HintPath>..\packages\CodegenCS.1.0.7\lib\net472\CodegenCS.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="DarkUI">
+      <HintPath>..\..\GrimliteRev-Internal2\Source Code (v1.3)\Dependency\DarkUI.dll</HintPath>
+    </Reference>
     <Reference Include="EasyHook, Version=2.7.7097.0, Culture=neutral, PublicKeyToken=4b580fca19d0b0c5, processorArchitecture=MSIL">
       <HintPath>..\packages\EasyHook.2.7.7097\lib\net40\EasyHook.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -128,6 +131,8 @@
       <HintPath>..\packages\PostSharp.Patterns.Model.Redist.6.9.11\lib\net45\PostSharp.Patterns.Model.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -180,6 +185,7 @@
     <Reference Include="System.Web.Extensions">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -207,17 +213,21 @@
     <Reference Include="System.Xml">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Telerik.WinControls">
+    <Reference Include="Telerik.WinControls, Version=2021.2.511.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\DLLs\TelerikUI\2021_2_511\Telerik.WinControls.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark">
       <HintPath>..\..\..\DLLs\TelerikUI\2021_2_511\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Telerik.WinControls.UI">
       <HintPath>..\..\..\DLLs\TelerikUI\2021_2_511\Telerik.WinControls.UI.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Telerik.WinControls.UI.Design">
       <HintPath>..\..\..\DLLs\TelerikUI\2021_2_511\Telerik.WinControls.UI.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="TelerikCommon">
       <HintPath>..\..\..\DLLs\TelerikUI\2021_2_511\TelerikCommon.dll</HintPath>
@@ -226,25 +236,26 @@
       <HintPath>..\packages\Titanium.Web.Proxy.3.1.1397\lib\net461\Titanium.Web.Proxy.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppRuntime.cs" />
-    <Compile Include="AS3InjectorForm.cs">
+    <Compile Include="GUI\AS3InjectorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AS3InjectorForm.Designer.cs">
+    <Compile Include="GUI\AS3InjectorForm.Designer.cs">
       <DependentUpon>AS3InjectorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AutoReloginForm.cs">
+    <Compile Include="GUI\AutoReloginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AutoReloginForm.Designer.cs">
+    <Compile Include="GUI\AutoReloginForm.Designer.cs">
       <DependentUpon>AutoReloginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BotBuilderForm.cs">
+    <Compile Include="GUI\Unused\BotBuilderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BotBuilderForm.Designer.cs">
+    <Compile Include="GUI\Unused\BotBuilderForm.Designer.cs">
       <DependentUpon>BotBuilderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BotConverter.cs" />
@@ -314,19 +325,19 @@
     <Compile Include="CodeBuilder\ICodeBlock.cs" />
     <Compile Include="CodeBuilder\IfBlock.cs" />
     <Compile Include="CodeBuilder\MultilineCodeBlock.cs" />
-    <Compile Include="ConsoleForm.cs">
+    <Compile Include="GUI\ConsoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsoleForm.Designer.cs">
+    <Compile Include="GUI\ConsoleForm.Designer.cs">
       <DependentUpon>ConsoleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Converters\DictionaryListConverter.cs" />
     <Compile Include="Converters\StringBoolConverter.cs" />
     <Compile Include="Converters\TrimConverter.cs" />
-    <Compile Include="CosmeticForm.cs">
+    <Compile Include="GUI\CosmeticForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CosmeticForm.Designer.cs">
+    <Compile Include="GUI\CosmeticForm.Designer.cs">
       <DependentUpon>CosmeticForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Cosmetics\CosmeticEquipment.cs" />
@@ -343,19 +354,19 @@
     <Compile Include="Flash\ObjectBinding.cs" />
     <Compile Include="Flash\IFlashObject.cs" />
     <Compile Include="Forms.cs" />
-    <Compile Include="GameIDForm.cs">
+    <Compile Include="GUI\GameIDForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameIDForm.Designer.cs">
+    <Compile Include="GUI\GameIDForm.Designer.cs">
       <DependentUpon>GameIDForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GameProxy\CaptureProxy.cs" />
     <Compile Include="GameProxy\Interceptor.cs" />
     <Compile Include="GameProxy\MessageInfo.cs" />
-    <Compile Include="GenericOptionsForm.cs">
+    <Compile Include="GUI\GenericOptionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenericOptionsForm.Designer.cs">
+    <Compile Include="GUI\GenericOptionsForm.Designer.cs">
       <DependentUpon>GenericOptionsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
@@ -372,23 +383,23 @@
     <Compile Include="Items\InventoryItem.cs" />
     <Compile Include="Items\ItemBase.cs" />
     <Compile Include="Items\ItemCategory.cs" />
-    <Compile Include="JumpForm.cs">
+    <Compile Include="GUI\JumpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="JumpForm.Designer.cs">
+    <Compile Include="GUI\JumpForm.Designer.cs">
       <DependentUpon>JumpForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoadersForm.cs">
+    <Compile Include="GUI\LoadersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadersForm.Designer.cs">
+    <Compile Include="GUI\LoadersForm.Designer.cs">
       <DependentUpon>LoadersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Monsters\Monster.cs" />
-    <Compile Include="OptionsForm.cs">
+    <Compile Include="GUI\OptionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OptionsForm.Designer.cs">
+    <Compile Include="GUI\OptionsForm.Designer.cs">
       <DependentUpon>OptionsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Options\IOption.cs" />
@@ -438,16 +449,16 @@
     <Compile Include="Repos\ScriptFetcher.cs" />
     <Compile Include="Repos\ScriptInfo.cs" />
     <Compile Include="Repos\ScriptRepo.cs" />
-    <Compile Include="ScriptEditorForm.cs">
+    <Compile Include="GUI\Unused\ScriptEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ScriptEditorForm.Designer.cs">
+    <Compile Include="GUI\Unused\ScriptEditorForm.Designer.cs">
       <DependentUpon>ScriptEditorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ScriptsForm.cs">
+    <Compile Include="GUI\ScriptsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ScriptsForm.Designer.cs">
+    <Compile Include="GUI\ScriptsForm.Designer.cs">
       <DependentUpon>ScriptsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Scripts\DropInfo.cs" />
@@ -500,10 +511,10 @@
     <Compile Include="Skills\UseRules\HealthUseRule.cs" />
     <Compile Include="Skills\UseRules\ManaUseRule.cs" />
     <Compile Include="Skills\UseRules\UseRule.cs" />
-    <Compile Include="StatsForm.cs">
+    <Compile Include="GUI\StatsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StatsForm.Designer.cs">
+    <Compile Include="GUI\StatsForm.Designer.cs">
       <DependentUpon>StatsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StrategyBuilderForm.cs">
@@ -520,10 +531,10 @@
     <Compile Include="Strategy\QuestStrategy.cs" />
     <Compile Include="Strategy\StrategyDatabase.cs" />
     <Compile Include="Strategy\WikiParser.cs" />
-    <Compile Include="UpdatesForm.cs">
+    <Compile Include="GUI\UpdatesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdatesForm.Designer.cs">
+    <Compile Include="GUI\UpdatesForm.Designer.cs">
       <DependentUpon>UpdatesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Updates\UpdateChecker.cs" />
@@ -542,28 +553,28 @@
     <Compile Include="Utils\StringUtils.cs" />
     <Compile Include="Utils\TimeLimiter.cs" />
     <Compile Include="Utils\TypedValueProvider.cs" />
-    <Compile Include="LogForm.cs">
+    <Compile Include="GUI\LogForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LogForm.Designer.cs">
+    <Compile Include="GUI\LogForm.Designer.cs">
       <DependentUpon>LogForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ScriptReposForm.cs">
+    <Compile Include="GUI\ScriptReposForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ScriptReposForm.Designer.cs">
+    <Compile Include="GUI\ScriptReposForm.Designer.cs">
       <DependentUpon>ScriptReposForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AboutForm.cs">
+    <Compile Include="GUI\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutForm.Designer.cs">
+    <Compile Include="GUI\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="GUI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="GUI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ZUI\Test.cs">
@@ -572,25 +583,25 @@
     <Compile Include="ZUI\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AS3InjectorForm.resx">
+    <EmbeddedResource Include="GUI\AS3InjectorForm.resx">
       <DependentUpon>AS3InjectorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AutoReloginForm.resx">
+    <EmbeddedResource Include="GUI\AutoReloginForm.resx">
       <DependentUpon>AutoReloginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BotBuilderForm.resx">
+    <EmbeddedResource Include="GUI\Unused\BotBuilderForm.resx">
       <DependentUpon>BotBuilderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsoleForm.resx">
+    <EmbeddedResource Include="GUI\ConsoleForm.resx">
       <DependentUpon>ConsoleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CosmeticForm.resx">
+    <EmbeddedResource Include="GUI\CosmeticForm.resx">
       <DependentUpon>CosmeticForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameIDForm.resx">
+    <EmbeddedResource Include="GUI\GameIDForm.resx">
       <DependentUpon>GameIDForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenericOptionsForm.resx">
+    <EmbeddedResource Include="GUI\GenericOptionsForm.resx">
       <DependentUpon>GenericOptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HideForm.resx">
@@ -599,13 +610,13 @@
     <EmbeddedResource Include="HotkeysForm.resx">
       <DependentUpon>HotkeysForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="JumpForm.resx">
+    <EmbeddedResource Include="GUI\JumpForm.resx">
       <DependentUpon>JumpForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoadersForm.resx">
+    <EmbeddedResource Include="GUI\LoadersForm.resx">
       <DependentUpon>LoadersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OptionsForm.resx">
+    <EmbeddedResource Include="GUI\OptionsForm.resx">
       <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PacketInterceptorForm.resx">
@@ -631,10 +642,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ScriptEditorForm.resx">
+    <EmbeddedResource Include="GUI\Unused\ScriptEditorForm.resx">
       <DependentUpon>ScriptEditorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ScriptsForm.resx">
+    <EmbeddedResource Include="GUI\ScriptsForm.resx">
       <DependentUpon>ScriptsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SkillRuleForm.resx">
@@ -643,25 +654,25 @@
     <EmbeddedResource Include="SkillsForm.resx">
       <DependentUpon>SkillsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StatsForm.resx">
+    <EmbeddedResource Include="GUI\StatsForm.resx">
       <DependentUpon>StatsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StrategyBuilderForm.resx">
       <DependentUpon>StrategyBuilderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdatesForm.resx">
+    <EmbeddedResource Include="GUI\UpdatesForm.resx">
       <DependentUpon>UpdatesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogForm.resx">
+    <EmbeddedResource Include="GUI\LogForm.resx">
       <DependentUpon>LogForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ScriptReposForm.resx">
+    <EmbeddedResource Include="GUI\ScriptReposForm.resx">
       <DependentUpon>ScriptReposForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutForm.resx">
+    <EmbeddedResource Include="GUI\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="GUI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ZUI\Test.resx">
@@ -704,6 +715,9 @@
     </Content>
     <Content Include="EasyLoad64.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="editor\DefaultScript.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="editor\ICSharpCode.AvalonEdit.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -783,7 +797,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>del "$(TargetDir)\tmp\placeholder.txt"
@@ -812,4 +825,9 @@ ren "$(TargetDir)\_AS3Style.tmp" "AS3Style.xml"</PostBuildEvent>
   </Target>
   <Import Project="..\packages\PostSharp.6.9.11\build\PostSharp.targets" Condition="Exists('..\packages\PostSharp.6.9.11\build\PostSharp.targets')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <MoveToLibFolder Include="$(OutputPath)*.dll ; $(OutputPath)*.pdb ; $(OutputPath)*.xml" />
+    </ItemGroup>
+  </Target>
 </Project>

@@ -42,7 +42,7 @@ namespace RBot
         /// <summary>
         /// When enabled, this will cause all targeted monsters to teleport to you.
         /// </summary>
-        [CallBinding("magnetize", UseValue = false, Get = false)]
+        [CallBinding("magnetise", UseValue = false, Get = false)]
         public bool Magnetise { get; set; }
         /// <summary>
         /// Disables drawing the world to (somewhat) reduce lag and CPU usage.
@@ -50,6 +50,17 @@ namespace RBot
         /// <remarks>It is much more effective to minimize the game to reduce CPU usage than to enable this option. For the lowest CPU usage, try both.</remarks>
         [CallBinding("killLag", Get = false)]
         public bool LagKiller { get; set; }
+        /// <summary>
+        /// Changes game FPS (frames per second)
+        /// </summary>
+        [ObjectBinding("stage.frameRate", Get = false)]
+        public int SetFPS { get; set; } = 30;
+
+        /// <summary>
+        /// Displays FPS (frames per second)
+        /// </summary>
+        [ObjectBinding("ui.mcFPS.visible")]
+        public bool ShowFPS { get; set; }
         /// <summary>
         /// Determines whether all monsters in the room should be aggroed (provoked). They will all attack you at the same time.
         /// </summary>
@@ -88,6 +99,11 @@ namespace RBot
         [ModuleBinding("DisableCollisions")]
         public bool DisableCollisions { get; set; }
         /// <summary>
+        /// Disables the death AD.
+        /// </summary>
+        [CallBinding("disableDeathAd", Get = false)]
+        public bool DisableDeathAds { get; set; }
+        /// <summary>
         /// When enabled, calls to ScriptPlayer#Join will be redirected to ScriptPlayer#JoinGlitched automatically.
         /// GLITCHED ROOMS HAVE BEEN PATCHED. THIS OPTION NOW DOES NOTHING.
         /// </summary>
@@ -113,10 +129,20 @@ namespace RBot
         [ObjectBinding("world.myAvatar.objData.strUsername", "world.rootClass.ui.mcPortrait.strName.text", "world.myAvatar.pMC.pname.ti.text", Get = false)]
         public string CustomName { get; set; }
         /// <summary>
+        /// Sets the color of your name with HEX (0xFFFFFF)
+        /// </summary>
+        [ObjectBinding("world.myAvatar.pMC.pname.ti.textColor", Get = false)]
+        public int NameColor {get; set; }
+        /// <summary>
         /// Sets a persistent, custom guild name (client side).
         /// </summary>
         [ObjectBinding("world.myAvatar.pMC.pname.tg.text", Get = false)]
         public string CustomGuild { get; set; }
+        /// <summary>
+        /// Sets the color of your guild name with HEX (0xFFFFFF)
+        /// </summary>
+        [ObjectBinding("world.myAvatar.pMC.pname.tg.textColor", Get = false)]
+        public int GuildColor { get; set; }
 
         /// <summary>
         /// An option to constantly modify the player's walk speed (the ScriptManager's timer thread will update the ingame value).
@@ -175,10 +201,12 @@ namespace RBot
                 (c.InvokeRequired ? () => c.Invoke(a) : a)();
             }
             if (_handlers.TryGetValue(e.PropertyName, out OptionChangedHandler h))
-                h.Invoke(e.PropertyName, val);
-            else if (val is bool)
             {
-                bool v = (bool)val;
+                h.Invoke(e.PropertyName, val);
+            }
+            else if (val is bool x)
+            {
+                bool v = x;
                 SetValue(e.PropertyName, !v);
                 SetValue(e.PropertyName, v);
             }

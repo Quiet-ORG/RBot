@@ -504,7 +504,9 @@ namespace RBot
         public void HuntWithPriority(string name, HuntPriorities priority)
         {
             if (priority == HuntPriorities.None)
+            {
                 Hunt(name);
+            }
             else
             {
                 Bot.Lite.UntargetSelf = true;
@@ -512,15 +514,14 @@ namespace RBot
                 while (true)
                 {
                     string[] names = name.Split('|').Select(x => x.ToLower()).ToArray();
-                    IOrderedEnumerable<Monster> ordered = Bot.Monsters.MapMonsters.OrderBy(x => 0);
+                    IOrderedEnumerable<Monster> ordered = Bot.Monsters.MapMonsters.OrderBy(_ => 0);
                     if (priority.HasFlag(HuntPriorities.HighHP))
                         ordered = ordered.OrderByDescending(x => x.HP);
                     else if (priority.HasFlag(HuntPriorities.LowHP))
                         ordered = ordered.OrderBy(x => x.HP);
                     if (priority.HasFlag(HuntPriorities.Close))
                         ordered = ordered.OrderBy(x => x.Cell == Cell ? 0 : 1);
-                    List<Monster> targets = ordered.Where(m => names.Any(n => n == "*" || n.Equals(m.Name, StringComparison.OrdinalIgnoreCase)) && m.Alive).ToList();
-                    foreach(Monster target in targets)
+                    foreach(Monster target in ordered.Where(m => names.Any(n => n == "*" || n.Equals(m.Name, StringComparison.OrdinalIgnoreCase)) && m.Alive).ToList())
                     {
                         bool sameCell = target.Cell == Cell;
                         if(sameCell || CanJumpForHunt())
@@ -619,7 +620,9 @@ namespace RBot
                 }
             }
             else
+            {
                 Bot.Log("Item count does not match quantity count.");
+            }
         }
 
         /// <summary>
@@ -749,9 +752,9 @@ namespace RBot
         /// <param name="rejectElse">Whether or not to reject items which are not contained in the 'items' array.</param>
         public void KillForItems(string name, string[] items, int[] quantities, bool tempItems = false, bool rejectElse = true)
         {
-            if(items.Length == quantities.Length)
+            if (items.Length == quantities.Length)
             {
-                while(!Bot.ShouldExit()
+                while (!Bot.ShouldExit()
                     && Enumerable.Range(0, items.Length).All(i => (!tempItems && Bot.Inventory.Contains(items[i], quantities[i]))
                                                                 || (tempItems && Bot.Inventory.ContainsTempItem(items[i], quantities[i]))))
                 {
@@ -762,7 +765,9 @@ namespace RBot
                 }
             }
             else
+            {
                 Bot.Log("Item count does not match quantity count.");
+            }
         }
 
         /// <summary>
@@ -830,11 +835,22 @@ namespace RBot
             LastJoin = map;
             if (ignoreCheck || !Bot.Map.Name.Equals(map, StringComparison.OrdinalIgnoreCase))
             {
+                if (map.Split('-')[0] == "tercessuinotlim")
+                {
+                    Jump("m22", "Center");
+                }
+
                 if (Bot.Options.PrivateRooms || map.Contains("-1e9"))
+                {
                     map = map.Split('-')[0] + "-1000000";
+                }
                 if (Bot.Options.SafeTimings)
+                {
                     Bot.Wait.ForActionCooldown(ScriptWait.GameActions.Transfer);
+                }
+
                 JoinPacket(map, cell, pad);
+
                 if (Bot.Options.SafeTimings)
                 {
                     if (!Bot.Wait.ForMapLoad(map, 20))
@@ -844,7 +860,9 @@ namespace RBot
                         _Join(map, cell, pad, false);
                     }
                     else
+                    {
                         Jump(cell, pad);
+                    }
                 }
             }
         }
@@ -875,7 +893,9 @@ namespace RBot
                     _JoinGlitched(map, cell, pad, counter - 1);
                 }
                 else
+                {
                     Jump(cell, pad);
+                }
             }
         }
 
@@ -959,7 +979,7 @@ namespace RBot
         /// <returns>The player's faction rank, or 0 if the player has no rep in that faction.</returns>
         public int GetFactionRank(string name)
         {
-            return Factions.FirstOrDefault(f => f.Name.Equals(name, StringComparison.OrdinalIgnoreCase))?.Rank ?? 0;
+            return Factions.Find(f => f.Name.Equals(name, StringComparison.OrdinalIgnoreCase))?.Rank ?? 0;
         }
 
         private string ConvertToNamesString(IEnumerable<string> names)

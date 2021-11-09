@@ -70,7 +70,7 @@ namespace RBot
         private async void btnRegisterShop_Click(object sender, EventArgs e)
         {
             btnRegisterShop.Enabled = false;
-            if (await Task.Run(() => Database.RegisterShop((int)numShopID.Value, txtShopMap.Text == string.Empty ? null : txtShopMap.Text)))
+            if (await Task.Run(() => Database.RegisterShop((int)numShopID.Value, txtShopMap.Text?.Length == 0 ? null : txtShopMap.Text)))
                 _UpdateStrats();
             else
                 MessageBox.Show("Failed to load shop.");

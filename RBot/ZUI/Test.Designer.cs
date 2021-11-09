@@ -51,6 +51,7 @@ namespace RBot.ZUI
         }
 
         #endregion
+
         private Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme1;
     }
 }

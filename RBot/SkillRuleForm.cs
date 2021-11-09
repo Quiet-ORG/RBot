@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 using RBot.Skills.UseRules;
+using Telerik.WinControls.UI;
 
 namespace RBot
 {
-    public partial class SkillRuleForm : Form
+    public partial class SkillRuleForm : RadForm
     {
         private static List<Type> _ruleTypes = new List<Type>
         {

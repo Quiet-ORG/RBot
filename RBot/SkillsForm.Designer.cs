@@ -42,6 +42,7 @@
             this.cbSkills = new System.Windows.Forms.ComboBox();
             this.lnkRefreshSkills = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // lbSkills
@@ -107,7 +108,7 @@
             this.lblDelay.AutoSize = true;
             this.lblDelay.Location = new System.Drawing.Point(282, 163);
             this.lblDelay.Name = "lblDelay";
-            this.lblDelay.Size = new System.Drawing.Size(59, 13);
+            this.lblDelay.Size = new System.Drawing.Size(61, 13);
             this.lblDelay.TabIndex = 6;
             this.lblDelay.Text = "Delay (ms):";
             // 
@@ -177,7 +178,7 @@
             this.lnkRefreshSkills.AutoSize = true;
             this.lnkRefreshSkills.Location = new System.Drawing.Point(232, 266);
             this.lnkRefreshSkills.Name = "lnkRefreshSkills";
-            this.lnkRefreshSkills.Size = new System.Drawing.Size(44, 13);
+            this.lnkRefreshSkills.Size = new System.Drawing.Size(46, 13);
             this.lnkRefreshSkills.TabIndex = 12;
             this.lnkRefreshSkills.TabStop = true;
             this.lnkRefreshSkills.Text = "Refresh";
@@ -204,9 +205,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "SkillsForm";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
             this.Text = "Skills";
             this.Load += new System.EventHandler(this.SkillsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

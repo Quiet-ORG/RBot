@@ -70,7 +70,7 @@
 78:Ancient Mix it Up!
 79:Ancient Shadow Skills
 80:Ancient Evade and Counterstrike!
-81:Ancient Essential Magics 
+81:Ancient Essential Magics
 82:Ancient Glimpse of the Dark Side
 83:Ancient Undead Energy
 84:Ancient Healer Knowledge
@@ -123,7 +123,7 @@
 140:Squishy Squash!
 141:Ice Cream!
 142:Ring of Pain!
-143:Cholesterious 
+143:Cholesterious
 144:Murry's Revenge
 145:Crusaders Schmusaders
 146:Bad Captains
@@ -142,7 +142,7 @@
 159:Fluffy Bears
 160:Blue Eyed Beast
 161:Trouble Makers
-162:Bad Ice Cream 
+162:Bad Ice Cream
 163:Greedy Sneevil
 164:Shadow Figure
 165:Dragonslayer Veteran
@@ -188,7 +188,7 @@
 217:A Shoemaker's Work is Never Done
 219:The Sabbatia
 220:Grasses
-221:The Spiders have changed... 
+221:The Spiders have changed...
 223:Things that go Bump in the Night
 224:Defend Town
 225:Mega Defenders Medal
@@ -200,7 +200,7 @@
 232:Dagger of Serpents!
 233:Blade of Thorns
 234:Berzerker Bunny Helm - Wooden Egg
-235:Transforming Bunny Spear - Egg Shell 
+235:Transforming Bunny Spear - Egg Shell
 236:Bunny Berzerker Armor - Were Egg
 237:Bunny on your Back - Quacked Egg
 238:Monday... Bone Mace!
@@ -329,9 +329,9 @@
 361:Dwarf War Mega Defender Medals
 362:Defeat Rock Roc
 363:Facing Vath
-364:Youthanize 
-365:Rattle Battle 
-366:Dangerous Decor 
+364:Youthanize
+365:Rattle Battle
+366:Dangerous Decor
 367:Bone-afide
 368:Sea No Evil
 369:That Hero Who Chases Slimes
@@ -340,7 +340,7 @@
 372:Tomb with a View
 373:Skele-tongue
 374:Ring Bearer
-375:Skeletal Sabotage 
+375:Skeletal Sabotage
 376:Tunnel of Terror
 377:The Search for the Sword
 378:Pirate Ship Defender
@@ -369,7 +369,7 @@
 401:What’s Up, Doc?
 402:Dog Days
 403:Faceless Threat
-405:Zodiac Puzzle Key 
+405:Zodiac Puzzle Key
 406:Rescue!
 407:Hay There!
 408:Got A Light
@@ -497,11 +497,11 @@
 531:Bats of a Leather Flock Together
 532:Pain in the Neck
 533:Sanguine’s Terrortory
-534:A Gift Of Meat 
+534:A Gift Of Meat
 535:No Respect
 536:Vampire Knights
 537:Sanguine
-538:Golden Ticket 
+538:Golden Ticket
 539:Golden Ticket Tier 1
 540:Golden Ticket Tier 2
 541:Golden Ticket Tier 3
@@ -525,7 +525,7 @@
 559:Iron Wing Helm Enchant
 560:Iron Wing Helm Enchant
 561:A Sample of Twilight
-562:None Shall Remain! 
+562:None Shall Remain!
 563:Breaking Prawn
 564:Search and Report
 565:The Key is the Key!
@@ -542,7 +542,7 @@
 577:Hex: The Indecisive Minion
 578:Blood: The Indecisive Minion
 579:Fiend: The Indecisive Minion
-580:Arcane Orb 
+580:Arcane Orb
 581:Blood Orb
 582:Primal Orb
 583:Shadow Orb
@@ -611,7 +611,7 @@
 648:Stairway to Haven
 649:Rolling Stones
 650:Light My Fire
-651:Knockin' on Haven's Door 
+651:Knockin' on Haven's Door
 652:Practice makes Perfect Bottle
 653:Tap that Cactus
 654:Get me that Recipe!
@@ -777,7 +777,7 @@
 814:Toothy Smiles
 815:Slimy Cyrus
 816:Lord Of The Fleas
-817:Not The Best Idea 
+817:Not The Best Idea
 818:Gates and Guardians
 819:Scales and Tails
 820:Omnomnoms
@@ -824,7 +824,7 @@
 861:Thin the Ranks
 862:Defeat Lieutenant Scarface
 863:Locate the Lords of Order
-864:Defeat Undead Artix 
+864:Defeat Undead Artix
 865:The Multiverse is Safe
 866:A Timely Meating
 867:Hire Nulgath Larvae
@@ -836,7 +836,7 @@
 873:Where is that Barn Key?
 874:Investigate the Barn
 875:Malik-EYE is so Grounded
-876:Clearing the Candy Corn Field 
+876:Clearing the Candy Corn Field
 877:So Sick of EYE-Sac
 878:She Who Walks Behind The Stalks
 879:Candy Corn
@@ -857,7 +857,7 @@
 894:Make things Pop with a Sentry Bot
 895:Web Browsing for Balloons
 896:Complete Airheads
-897:The Final Pilgrimage 
+897:The Final Pilgrimage
 898:Chasing After a Girl
 899:Tracking Down Nythera
 900:Searching for Splinters
@@ -923,7 +923,7 @@
 961:The Blue Dragon's Spirit
 962:Go Fetch!
 963: A Fowl Costume Change
-964:After a While… 
+964:After a While…
 965:Who You Callin’ a ChickenMan?
 966:Solar Powered Wind Burning Air Conditioning Stove
 967:Sacred Scarabs
@@ -1125,11 +1125,11 @@
 1169:Charging Up!
 1170:Vordred Boss!
 1171:A Gate and Terrible Monster
-1172:I’m on the Hunt, I’m after 58-Sr3 
+1172:I’m on the Hunt, I’m after 58-Sr3
 1173:Intruder Alert! Intruder Alert!
-1174:Robo-Mutiny means a Bounty! I 
-1175:Robo-Mutiny means a Bounty! II 
-1176:Robo-Mutiny means a Bounty! III 
+1174:Robo-Mutiny means a Bounty! I
+1175:Robo-Mutiny means a Bounty! II
+1176:Robo-Mutiny means a Bounty! III
 1177:Mission 3
 1178:Mission 4
 1179:Fossil Find Fiend
@@ -1215,7 +1215,7 @@
 1265:Zot Gives Peace
 1266:Sput Makes Sausage?!
 1267:Ghaz Experiments
-1268:Troll Defender 
+1268:Troll Defender
 1269:Troll Mega Defender
 1270:Horc Defender
 1271:Horc Mega Defender
@@ -1256,8 +1256,8 @@
 1307:Flying... and Falling
 1308:Doppelganger Wants to Hit You
 1309:Catapault Climb
-1310:For Science! 
-1311:Scientific Accessories 
+1310:For Science!
+1311:Scientific Accessories
 1312:Exquisite Dead Guy
 1313:Hall of Stolen Heads
 1314:I Want a Rock
@@ -1365,8 +1365,8 @@
 1416:Zellare, The Fire Prime
 1417:Meet me in the DragonPlane
 1418:Open the DragonGate
-1419:Contain the Chaorruption 
-1420:Ancient Ointment 
+1419:Contain the Chaorruption
+1420:Ancient Ointment
 1421:Anoint the Ancients
 1422:Serpents Do No Harm
 1423:Though Nature Bars the Way
@@ -1443,7 +1443,7 @@
 1494:The Red Trophy
 1495:Scramble 'Em!
 1496:Crush The Eggs
-1497:You did it? 
+1497:You did it?
 1498:Tasty Treats
 1499:Hidden Points
 1500:Set The Trap
@@ -1457,12 +1457,12 @@
 1508:Snow Way to Know Where to Go
 1509:Arming the Undead Army
 1510:Cold As A Corpse
-1511:Pretty Pretty Undead Princess Decor 
-1512:Deadifying Frost Lions 
-1513:Forest Guardian Gauntlet  
+1511:Pretty Pretty Undead Princess Decor
+1512:Deadifying Frost Lions
+1513:Forest Guardian Gauntlet
 1514:No More Moglin Munchies
-1515:Gravelyn’s Most Dangerous Game 
-1516:Defiant Undead Deserters 
+1515:Gravelyn’s Most Dangerous Game
+1516:Defiant Undead Deserters
 1517:Tinsel's Armor Gift
 1518:Tinsel's Dagger Gift
 1519:Snow Turning Back!
@@ -1514,7 +1514,7 @@
 1567:A Mechanical Girl’s Best Friend
 1568:Blooming Blossom Bouquet
 1569:Sweet FireCherry Pie
-1570:Robot Unicorn Assemble! 
+1570:Robot Unicorn Assemble!
 1571:A Fresh Breath of Life
 1572:Where Air You?
 1573:Invading Your (Sacred) Space
@@ -1572,7 +1572,7 @@
 1627:The Frame Up
 1628:The Lenscrafter
 1629:The Hidden Vault
-1630:The Guardian 
+1630:The Guardian
 1631:The Family Jewels
 1632:Cornelis Reborn
 1633:Call from Deep Within
@@ -1584,7 +1584,7 @@
 1639:Return of the Crystal Beauty
 1640:Taking back the Shards of Secrets
 1641:Lament of the Lyre
-1642:Marc of the Sword 
+1642:Marc of the Sword
 1643:Love's Odyssey
 1649:Oberon's Bouquet
 1650:Pygmalian's Ivory Lady
@@ -1689,7 +1689,7 @@
 1753:Fighting Back
 1754:Product
 1755:Earn Your Stripes
-1756:Stay Sharp 
+1756:Stay Sharp
 1757:Get Us Some Business!
 1758:Rainbow Shards
 1759:Lucky Clovers
@@ -1866,7 +1866,7 @@
 1935:Stainless Stealers
 1936:Pick some Pockets to Plunder
 1937:What You Seize is What You Get
-1938:Benet’s Biscuits 
+1938:Benet’s Biscuits
 1939:The Stolen Ritual
 1940:A Pound Of Flesh
 1941:Blood Of The Ancients
@@ -1958,7 +1958,7 @@
 2027:Weaken the Moya
 2028:Banish the Banished One
 2029:Become the Desterrat Moya (daily)
-2030:Prevent the Return (daily) 
+2030:Prevent the Return (daily)
 2031:Barely Made It
 2032:Plant Food
 2033:Supplies Party
@@ -1990,7 +1990,7 @@
 2059:Retrieve the Past, Room 13
 2060:Fives Times the Fury
 2061:The Past Will Haunt You
-2062:Doom Overlord Challenge 
+2062:Doom Overlord Challenge
 2063:Executive Doom Overlord Challenge
 2064:Begin your Destiny
 2065:Dark Spirit Orbs
@@ -2020,7 +2020,7 @@
 2089:A Penny for your Foughts
 2090:Dark Spirit Donation
 2091:Mine Crafting
-2092:Zombie War 
+2092:Zombie War
 2093:Undead Assault
 2094:Skull Crusher Mountain
 2095:The Undead Giant
@@ -2031,7 +2031,7 @@
 2100:Fight Fire with Fire!
 2101:No One Said It Would Be Easy
 2102:Free Us, Oh Brave One!
-2103:Almighty Aluminum Enchantment 
+2103:Almighty Aluminum Enchantment
 2104:Blessed Barium Enchantment
 2105:Glorious Gold Enchantment
 2106:Immortal Iron Enchantment
@@ -2064,7 +2064,7 @@
 2133:Celestial Copper of Destiny
 2134:Sanctified Silver of Destiny
 2135:Pious Platinum of Destiny
-2136:Basic Weapon Kit Construction 
+2136:Basic Weapon Kit Construction
 2137:Accursed Arsenic of Doom
 2138:Baneful Beryllium of Doom
 2139:Calamitous Chromium of Doom
@@ -2131,7 +2131,7 @@
 2204:Do the 'do
 2205:Business is BOOMing
 2206:Strut My Stuff
-2207:Who Let the Togs Out? 
+2207:Who Let the Togs Out?
 2208:You Don't Want To Know...
 2209:Shurpu Blaze Tokens
 2210:MEMBER: Shurpu Blaze Tokens
@@ -2160,7 +2160,7 @@
 2233:The Gang's Not All Here
 2234:Beast Maker Beat-down
 2235:Farm for Parts
-2236:Beefed Up Baddies 
+2236:Beefed Up Baddies
 2237:Souls to Steal
 2238:Souls to Feed On
 2239:Time to Learn the Truth
@@ -2179,8 +2179,8 @@
 2252:Break a Beast!
 2253:Trust is Not Ephemeral
 2254:In a Split Exasecond
-2255:Time to Prove Yourself 
-2256:Fill the Empty Hours 
+2255:Time to Prove Yourself
+2256:Fill the Empty Hours
 2257:Clock of the Long Now
 2258:Unending Avatar
 2259:Obtain the Dark Caster Class
@@ -2309,13 +2309,13 @@
 2382:Get Fired Up... or Shatter!
 2383:Enemies on Ice
 2384:Tek-nical Forging Skill
-2385:Akriloth Assault 
+2385:Akriloth Assault
 2386:Proto-Chaos Beast Battle!
 2387:Night of 100 Ninjas
 2388:Ultra Carnax Challenge Fight!
 2389:Aye for an Aye
 2390:Skull and Crossed Bones
-2391:Off the Hook! 
+2391:Off the Hook!
 2392:Booty and the Beast
 2393:A Pirate's Lunch For Me
 2394:Thee Seven C's!
@@ -2341,17 +2341,17 @@
 2414:Let's Get Filthy
 2415:Like T-shirts to a Flame
 2416:I Bless the Rains Down in Lore
-2417:The Wind Beneath My Moglin 
+2417:The Wind Beneath My Moglin
 2418:Like T-shirts to a Flame
 2419:I Bless the Rains Down in Lore
-2420:The Wind Beneath My Moglin 
+2420:The Wind Beneath My Moglin
 2421:Time is Running Out
 2422:Thief of Hours
 2423:Death-dealing Blows
 2424:Fear the Reaper
 2425:Master Death's Realm
 2426:Real Live Hero-Training
-2427:The Living Library 
+2427:The Living Library
 2428:Understanding Xhar Morghuil
 2429:Door to Eternity
 2430:Death vs Death
@@ -2477,7 +2477,7 @@
 2554:Tinsel's Cape Gift
 2555:Tinsel's Second Helm Gift
 2556:reuse
-2557:Nulgath 
+2557:Nulgath
 2558:Phoenix Blade of Nulgath
 2559:The Weapon Parasite
 2560:Doom Worm Creepers
@@ -2553,7 +2553,7 @@
 2630:Tame The Lion
 2631:Find Food in Greenguard West
 2632:Spider Snacks in GreenGuard East
-2633:Slime Soup in Swordhaven 
+2633:Slime Soup in Swordhaven
 2634:SneevSnax in Boxes
 2635:Meaty Bones in Graveyard
 2636:Cheese in the Sewer
@@ -2563,14 +2563,14 @@
 2640:Tesseract Gem in Cornelis
 2641:Turtle Meat in Dwarfhold Keep
 2642:Wisteria in ForestChaos
-2643:Supplies in ChaosMarsh 
+2643:Supplies in ChaosMarsh
 2644:Rice Milk in Hachiko
 2645:Tasty Treats in Bamboo Forest
 2646:Bat-bones in Darkovia Graveyard
 2647:Main Meal in Safiria
 2648:Kibble in Lycan Ridge
 2649:Tune-a Fish in Mythsong
-2650:Rock Lobsters in Stairway 
+2650:Rock Lobsters in Stairway
 2651:Zard Stew in Orchestra
 2652:Seed Crystals in Arcangrove
 2653:Snow Cones in Northlands
@@ -2581,7 +2581,7 @@
 2658:Watery Soup in Etherstorm
 2659:Sneak Spit in TheSpan
 2660:Bloodtears in Blackhorn Tomb
-2661:Daily quest: Feed the Pets 
+2661:Daily quest: Feed the Pets
 2662:Daily quest: Treats for Pets
 2663:Daily: Feed the Moglins
 2664:How Much Sharper Than Lion's Tooth?
@@ -2618,7 +2618,7 @@
 2695:Mask your Emotions
 2696:Crafting the Carranca
 2697:Party Like a BOSS!
-2698:Festive Festa Floats 
+2698:Festive Festa Floats
 2699:Make a Muiraquitã - see notes
 2700:Bando de Penas
 2701:Construa um Amuleto - see notes
@@ -2667,7 +2667,7 @@
 2744:Undead Legion Member Special
 2745:Deposit Depot
 2746:Souldier
-2747:Coliseum Combatants 
+2747:Coliseum Combatants
 2748:Beginning the Final
 2749:Quest 1 - Ruby
 2750:Quest 2 - Citrine
@@ -2711,7 +2711,7 @@
 2788:DragonDoodle Cookies
 2789:Dragon Tail Trophies
 2791:Dragon Head Trophies
-2792:Surveillance for Sir Valence 
+2792:Surveillance for Sir Valence
 2793:Well Planned Getaway
 2794:Secrets Of The Mad Prince
 2796:Potion of Cleansing
@@ -2740,14 +2740,14 @@
 2819:Your Fourth Quest: Wolves!
 2820:Your Fifth Quest: Water Creature
 2821:Strange Golden Egg
-2822:Slimy Golden Egg 
-2823:Moving Golden Egg 
+2822:Slimy Golden Egg
+2823:Moving Golden Egg
 2824:Cracking Golden Egg
 2825:Strange Platinum Egg
 2826:Slimy Platinum Egg
 2827:Moving Platinum Egg
 2828:Cracking Platinum Egg
-2829:Wait for Cabdury 
+2829:Wait for Cabdury
 2830:Mission 6
 2831:Fuel For Flight
 2832:Food For Flight
@@ -2773,7 +2773,7 @@
 2852:Watching Prologue
 2853:Find Explosive Supplies
 2854:Robot Defense League
-2855:Battle the Space Raptor 
+2855:Battle the Space Raptor
 2856:Spare J6
 2857:Supplies to spin The Wheel of Chance
 2858:J6 Epilogue
@@ -2803,7 +2803,7 @@
 2882:Quadtanium?
 2883:Capacitance
 2884:The Heart Of The World
-2885:Essential Magics 
+2885:Essential Magics
 2886:Glimpse of the Dark Side
 2887:Undead Energy
 2888:Mage Essence
@@ -2850,7 +2850,7 @@
 2929:DoomFire
 2930:Spoiled Souls
 2931:Purity of Bone
-2932:Undead Artix Returns! 
+2932:Undead Artix Returns!
 2933:Find the Stonewrit!
 2934:Find the Handle!
 2935:Find the Hilt!
@@ -2861,7 +2861,7 @@
 2940:Battling Chaos
 2941:Conquering Chaos
 2942:Feeding the Frozen Flame
-2943:Fire for the Frozen Flame 
+2943:Fire for the Frozen Flame
 2944:Lore Cores
 2945:Volcanic Exploration
 2946:Retrieve the Ancient Artifact: Fire Staff
@@ -2938,9 +2938,9 @@
 3017:Chamber of Death
 3018:Chamber of Agony
 3019:Chamber of Sleep
-3020:Begin your Underworld Journey 
+3020:Begin your Underworld Journey
 3021:Exalted Legion Champion
-3022:Sullen Souls Survival 
+3022:Sullen Souls Survival
 3023:Wrathful Souls Rage
 3024:Hydra Hospitality
 3025:Dage’s Guard Dog
@@ -2952,9 +2952,9 @@
 3031:Bad Vibes
 3032:Quite the Problem
 3033:Valoth Pet Quest
-3034:IMPressive 
+3034:IMPressive
 3035:The Raven’s Loss
-3036:The Power of Flowers 
+3036:The Power of Flowers
 3037:A Bouquet of Blessing
 3038:The Time for Judgment
 3039:Judged on Performance
@@ -2983,13 +2983,13 @@
 3062:Defeat the Chaos Warlord
 3063:Defeat Ultra Chaos Warlord
 3064:Toil the Gargoyle (Daily)
-3065:Boy Fiends and Ghoul Fiends 
+3065:Boy Fiends and Ghoul Fiends
 3066:Arachnid Eradication
 3067:Apparition Nation
 3068:Weapons-in-Progress
 3069:Putting the Sword in Swordhaven (Daily)
 3070:Helping Hands for Armors
-3071:Beautician Magician 
+3071:Beautician Magician
 3072:Pet Shop and Drops
 3073:Daily Treasure Chest Prize
 3074:Doom Single Spin
@@ -3129,7 +3129,7 @@
 3209:Oishii's Special Blend
 3210:Cornstalkerbread Stuffing
 3211:Super Special Chutney
-3212:Oishii's Secret Ingredient 
+3212:Oishii's Secret Ingredient
 3213:Taking Out the Turdrakolich
 3214:Defeat Ultra Turdrakolich
 3215:Cut In Line
@@ -3185,7 +3185,7 @@
 3265:Icing the Golems - for Evil!
 3266:Golems Really Frost Me Good
 3267:Golems Really Frost Me Bad
-3268:Yulgar's Daily Hero Challenge 
+3268:Yulgar's Daily Hero Challenge
 3269:Yulgar Needs to Hydra-te!
 3270:Yulgar's Worst Nightmare
 3271:Wood &amp; Herbs
@@ -3195,9 +3195,9 @@
 3275:Gentle Persuasion
 3276:Breaking &amp; Entering
 3277:The Hills Are Alive
-3278:A Geode for Geo 
+3278:A Geode for Geo
 3279:Bribery
-3280:Defeat Frostmane's Nightmare 
+3280:Defeat Frostmane's Nightmare
 3281:Defeat Frostmane's Ultra Nightmare
 3282:It's Snacktime!
 3283:More Geodes for Geo
@@ -3229,9 +3229,9 @@
 3310:The Forest &amp; Furious
 3311:Mystery Tree
 3312:Slay More Undead
-3313:Guidance from the Guardian 
+3313:Guidance from the Guardian
 3314:Get Fired Up
-3315:Marine Biology 
+3315:Marine Biology
 3316:Air Current Affairs
 3317:Back to your Roots
 3318:Classified Chaos
@@ -3330,7 +3330,7 @@
 3411:Humiliation of Conquest Gauntlet (Daily)
 3412:Slaughter of War Gauntlet (Daily)
 3413:Feast of Famine Gauntlet (Daily)
-3414:Mastery of Death Gauntlet (Daily) 
+3414:Mastery of Death Gauntlet (Daily)
 3415:Conquest Badge
 3416:War Badge
 3417:Famine Badge
@@ -3365,7 +3365,7 @@
 3446:Weaver Wave Defeated
 3447:Weaver Wave Destroyed
 3448:Impress the Arachnomancer
-3450:Chaos Weavers' Magic 
+3450:Chaos Weavers' Magic
 3451:Legendary Heroes of the Chaos Weavers
 3452:Weaver Tales and Legends
 3453:Weaving Rebellion
@@ -3449,8 +3449,8 @@
 3533:Air Realm Purification
 3534:Dracolich Disconnection
 3535:Heart-searing Pain
-3536:Legendary Elemental Reagents 
-3537:Elemental Reagent Hunt 
+3536:Legendary Elemental Reagents
+3537:Elemental Reagent Hunt
 3538:Quiz the Locals
 3539:Slay the Minions
 3540:Free the Fallen
@@ -3780,10 +3780,10 @@
 3865:Challenge SN.O.W.
 3866:Ultra SN.O.W.
 3867:DragonMaster Trial
-3868:Recovering the Scroll 
+3868:Recovering the Scroll
 3869:Deciphering the Prophecy
 3870:Quest for the First Chosen One
-3871:DragonMaster Gear 
+3871:DragonMaster Gear
 3872:DragonMaster Hoard
 3873:Hatch the Ichorus Egg
 3874:Ichorus Defender Scythe
@@ -3809,7 +3809,7 @@
 3894:Stone of Binding
 3895:Break the Bone Fortress
 3896:It’s a TRAP! (No, really.)
-3897:Defeat Braddock Bonebreaker 
+3897:Defeat Braddock Bonebreaker
 3898:Break Into the Hoard
 3899:Through the pass
 3900:Higher Passes
@@ -3951,7 +3951,7 @@
 4036:Lookin' Flashy
 4037:REMOVE FROM NPC
 4038:Ahead of the Game
-4039:Cupid’s Courier 
+4039:Cupid’s Courier
 4040:Last Minute Gift Ideas
 4041:Cravin’ a Raven
 4042:Owl Always Love You
@@ -3965,7 +3965,7 @@
 4050:A Salt with a Deadly Weapon
 4051:Mind your Manors, Magpie
 4052:Umbrella for my Bella
-4053:Bat Crazy! 
+4053:Bat Crazy!
 4054:Heat of Battle
 4055:Light the Flame
 4056:Kill It With Fire
@@ -3974,10 +3974,10 @@
 4059:Forged in Battle
 4060:Where There's Smoke...
 4061:Fire, Fear, and Pet Food
-4062:Hotheads 
+4062:Hotheads
 4063:Nineveh and Pyre
 4064:The Fire Within
-4065:Present the Presents 
+4065:Present the Presents
 4066:I Want Tibia Your Valentine
 4067:Kill Nastasia
 4068:Gravelyn Stops Nastasia!
@@ -4021,7 +4021,7 @@
 4106:Creepy Undead Monkey Quest
 4107:The Hard Way
 4108:Encrypt Keepers
-4109:Catching Couriers 
+4109:Catching Couriers
 4110:Steppe Quickly
 4111:Reclamation
 4112:Bad Press
@@ -4185,7 +4185,7 @@
 4271:Captain Kirkland
 4272:Recover J6's Head!
 4273:Cowboys vs Alienz
-4274:Titanic II 
+4274:Titanic II
 4275:Holo-Yulgar's
 4276:Holodeck Survival Rate
 4277:Space Paladin Survivors!?
@@ -4195,7 +4195,7 @@
 4281:DO NOT OPEN - Space Door Codes
 4282:The Search for Spork
 4283:Crew Cut
-4284:Restore Life Support 
+4284:Restore Life Support
 4285:DREAD SPACE BOSS
 4286:DREADER SPACE!!!
 4287:Dreadspace Finale Cutscene
@@ -4226,27 +4226,27 @@
 4312:Drearia on Demand
 4313:Plant a Little Seed and Nature Grows
 4314:A Key Discovery
-4315:Creepy House… Yay! 
+4315:Creepy House… Yay!
 4316:Sparkling Books
 4317:A Paladin in Peril
 4318:Pink Stinks!
-4319:Rats, RATS! 
+4319:Rats, RATS!
 4320:AdventureQuest Worm
 4321:UnBEARable Sight
 4322:Too Much Pink in Pinewood!
 4323:Kill Sparkletooth
 4324:The Citadorable Plot
 4325:Fuzzy Run Minigame
-4326:Fluffy Clouds 
+4326:Fluffy Clouds
 4327:Super Model Makai Hair
 4328:Squeaky Business
 4329:The Queen’s Offering
-4330:Boss Fight Beleen! 
+4330:Boss Fight Beleen!
 4331:On the Run to the Next Gig
-4332:Silence From the Songbird?! 
+4332:Silence From the Songbird?!
 4333:Break Into Backstage
 4334:Quest1 - quest to farm Void Auras
-4335:Quest2 - quest to farm the blade part 
+4335:Quest2 - quest to farm the blade part
 4336:Quest3 - quest to get the hilt part
 4339:Quest4 - quest to get the aura part
 4340:Etherstorm Membership Dues
@@ -4268,7 +4268,7 @@
 4356:Check the Trunk
 4357:Committing Tree-son
 4358:Heartwood
-4359:Drayko BOSS FIGHT! 
+4359:Drayko BOSS FIGHT!
 4360:Foilaged again!
 4361:Mind Games
 4362:DRAGON vs TITAN
@@ -4307,7 +4307,7 @@
 4396:Find the Lycanstone
 4397:Fur the Right Thing
 4398:Dis-lycan What Happened
-4399:Time to Rock this Finale! 
+4399:Time to Rock this Finale!
 4400:Weaken his Powers
 4401:Light and Dark
 4402:Paintings Give Him Strength
@@ -4372,13 +4372,13 @@
 4462:Paragon of Light
 4463:Cleanse the Grove
 4465:Fungi for a Fun Guy
-4466:Rose By Any Other Name  
+4466:Rose By Any Other Name
 4467:That’s So Lapis
 4468:Guts for a Greater Mind
 4469:World Tree Wrangling
 4470:Guardians Gone Bad
-4471:Catering to Craftsmanship 
-4472:Some Disassembly Required 
+4471:Catering to Craftsmanship
+4472:Some Disassembly Required
 4473:2nd Agitated Orb Quest
 4474:Breakfast With... Brains?
 4475:Post-Elemental Apocalypse
@@ -4442,17 +4442,17 @@
 4533:Plunderer’s Loot
 4534:Obtain the DragonStar Radar
 4535:Find the First DragonStar Crystal
-4536:Find the Second DragonStar Crystal 
-4537:Find the Third DragonStar Crystal 
+4536:Find the Second DragonStar Crystal
+4537:Find the Third DragonStar Crystal
 4538:Find the Fourth DragonStar Crystal
 4539:Find the Fifth DragonStar Crystal
-4540:Find the Sixth DragonStar Crystal 
+4540:Find the Sixth DragonStar Crystal
 4541:Raid the Bandits
 4542:HAMmer the Fabled Oinklong
 4543:Defeat the Great Horccolo
 4544:Eliminate the Legion Cyborgs
-4545:Pulverize Majic Guu 
-4546:Cleaning up the Guu 
+4545:Pulverize Majic Guu
+4546:Cleaning up the Guu
 4547:Defeat Super Dragon Twig!
 4548:Hyperbolic Training Session
 4549:Gather Energy Beans
@@ -4470,7 +4470,7 @@
 4561:Ultra Necronaut
 4562:Darkness Bleeds in Doomwood
 4563:Seek the Dark Scroll
-4564:Recover an Umbral Orb 
+4564:Recover an Umbral Orb
 4565:Bring Back Vordred’s Skull
 4566:Shadows on the Move
 4567:Shadow Switch?!
@@ -4486,8 +4486,8 @@
 4577:SMUH
 4578:Evolved Primal Orb Quest
 4579:Evolved Void Orb Quest
-4580:War Medal: Repel the Scourge 
-4581:War Mega Medal: Scour the Scourge 
+4580:War Medal: Repel the Scourge
+4581:War Mega Medal: Scour the Scourge
 4582:Chasing Shadows
 4583:Ravenbreak Rush
 4584:The Imminent Darkness
@@ -4499,7 +4499,7 @@
 4591:Piercing the Darkness
 4592:They are Not in a Forest
 4593:Holy Dragon Teeth
-4594:Don’t Breathe 
+4594:Don’t Breathe
 4595:Hold Back the Horde
 4596:Rune Hoarders
 4597:The Second Slaying
@@ -4535,14 +4535,14 @@
 4627:Cleaning the Grove (Farming Quest)
 4628:Sneak and Survey
 4629:Finding Weakness
-4630:Swiper Yes Swiping 
-4631:Sly Trickster 
+4630:Swiper Yes Swiping
+4631:Sly Trickster
 4632:Courage Means Crazy
 4633:Outfox Cave Creepers
 4634:Finding the Dragon
 4635:Cut the Rose
 4636:Extra Credit (Farming Quest)
-4637:Take to the Skies 
+4637:Take to the Skies
 4638:Ready to Pounce
 4639:What a Hoot
 4640:Shroom Spreading
@@ -4553,7 +4553,7 @@
 4645:Story Time (Farming Quest)
 4646:War Medal Turn In
 4647:Mega War Medal Turn In
-4648:Shadowy Reconnaissance 
+4648:Shadowy Reconnaissance
 4649:Slippery Shadows
 4650:Through the Looking-Glass
 4651:Necro-Polished
@@ -4565,7 +4565,7 @@
 4657:Legends’ Hunt for Shadowglass Shards
 4658:Gather the Golden Hours
 4659:Corruption of Elfhame
-4660:Restoring Nature 
+4660:Restoring Nature
 4661:Unlock the Guardian’s First Rune
 4662:Gnome Sweet Gnome
 4663:Unlock the Guardian’s Second Rune
@@ -4718,7 +4718,7 @@
 4814:A Fishy Frenzy
 4815:Love You To DEATH
 4816:Potion Commotion
-4817:The Melancholy of Alina 
+4817:The Melancholy of Alina
 4818:The Escapist
 4819:A Wary Library
 4820:The More You Glow
@@ -5354,7 +5354,7 @@
 5453:Find my Stuff
 5455:A Loyal Servant: Necrotic Sword of Doom
 5456:A Loyal Servant: Sepulchure’s DoomKnight
-5457:Let Darkness Enter your Heart 
+5457:Let Darkness Enter your Heart
 5458:Find me some Doom
 5459:Abyssal
 5460:Memories of The Past
@@ -5383,7 +5383,7 @@
 5483:NostalgiaQuest: Zhoom
 5484:NostalgiaQuest: Twilly
 5485:NostalgiaQuest: Zorbak SneevilTron
-5486:NostalgiaQuest: Zorbak Pizza 
+5486:NostalgiaQuest: Zorbak Pizza
 5487:Hounds and Infernals and Imps, Oh My!
 5488:Like Imps In A Pod
 5489:A Grievous Threat
@@ -5694,7 +5694,7 @@
 5797:None More Black
 5798:Energize Me!
 5799:Tainted Leaves
-5800:Reactivate the Wards 
+5800:Reactivate the Wards
 5801:How to Control a Dragon
 5802:Don't Inhale
 5803:Get a Monitor
@@ -6467,7 +6467,7 @@
 6573:Test the Ghost box
 6574:Get Wid of CWEEPY TWIG
 6575:Cranky Spirits
-6576:It's Too S-warm 
+6576:It's Too S-warm
 6577:Get into the Panic Room
 6578:Smash the Wall
 6579:Scary Baby
@@ -6475,7 +6475,7 @@
 6581:Such a Mess
 6582:Herbs Needed
 6583:Shine a Light
-6584:Hapless? 
+6584:Hapless?
 6585:How 'bout them Apples
 6586:Make an Offering
 6587:Test the Spell Again!
@@ -6583,7 +6583,7 @@
 6691:Mega Defender Medals
 6692:Magic and Mayhem
 6693:The Dragon Defender
-6694:The Flame Dragon 
+6694:The Flame Dragon
 6695:Prismatic Aura of the Ascended I
 6696:Prismatic Aura of the Ascended II
 6697:New Worlds, New Opportunities
@@ -7349,7 +7349,7 @@
 7470:Gather Spell Reagents
 7471:Follow the Trail
 7472:Defeat Krahen
-7473:Unlock the Spaceport 
+7473:Unlock the Spaceport
 7474:Get me a Drink
 7475:MonkeyButt Coffee
 7476:Flyer Time
@@ -7399,3 +7399,282 @@
 7520:The Importance Of Staying Healthy
 7521:An Aspiring Burgermonger
 7522:Burglinster's Revenge
+7523:Hack the System
+7524:Get the Code
+7525:Unlock the Door
+7526:Flora and Fauna
+7527:Erasertime
+7528:Erase it!
+7529:Gather Samples
+7530:Parts for a Machine
+7531:Test the Goop
+7532:Goop-Be-Gone
+7536:Gotta Get Out
+7537:Lighter Than Air
+7538:Colors of the World
+7539:A Painted Bridge
+7540:Trapped in a Dream
+7541:Light 'em Up
+7542:Fallen Stars
+7533:Cleaning Time
+7534:Chop Chop Fizz Fizz
+7535:It's THEM!
+7552:Are you Useful?
+7543:Starlight, Star Bright
+7544:Colors and Light
+7545:A Gem Amongst the Stars
+7546:The Final Gem
+7547:Mister Sandman
+7548:Target Practice
+7549:Double Crossed
+7550:Hollowborn Mansion
+7551:Swindle's Return Policy
+7553:Get the Seeds
+7554:Specimens
+7555:Flex it!
+7556:Now Weâ€™re Talking!
+7557:Letâ€™s Get You a Suit
+7558:I Got your Back (and your Top)
+7559:The Dark Sacrifice
+7560:The Post Summoning
+7561:Check their Teeth
+7562:More Investigation Needed
+7568:"Convince" the Bruiser
+7569:They Never Learn
+7570:Get the Mirror!
+7571:Get Her!
+7572:Digging for Recruits
+7563:Find Xiang
+7564:Destroy her Creatures
+7565:Time to un-decorate
+7566:Interrogation Time
+7567:Get rid of it!
+7573:Suited to Shield
+7574:Through Fumes and Flame
+7575:Fiamme's Fang
+7576:In Lava with Maladrite
+7577:Fahrenheit FEAR-51
+7578:Sweet Summer Treats
+7579:Un-Lifeguard Quest
+7580:Surely it Starts and Ends Here
+7581:The First Scroll
+7582:The Second Scroll
+7584:The Fourth Scroll
+7585:The Fifth Scroll
+7586:The Final Scroll
+7587:Ancient Alloys
+7588:Sweet Dream Collection
+7589:Bullies
+7590:Free the People
+7591:Sample It
+7592:Swat the Flies
+7583:The Third Scroll
+7600:Zyrus is Lost
+7601:Investigate the Tech
+7602:Another Science Experiment
+7593:Reclaim the Supplies
+7594:Who's That?
+7595:Find my Stuff
+7596:Save my Friends
+7597:Pull the Wires
+7598:Dress-up Time!
+7599:I Need a Distraction
+7603:Defeat the Deadtech
+7604:Gather Spell Components
+7605:A Few Things More
+7606:Search for the Axe
+7607:Defeat the BioKnight
+7608:Take the Axe!
+7609:Find the Keys
+7610:Ew, Rats
+7611:Grab Their Gear
+7612:Talk to the Guard
+7616:A Solemn Favor
+7617:Gather Flowers
+7618:Defeat the Minions
+7619:Create a Barrier
+7620:Purify the Tuyul
+7621:Give an Offering
+7622:Defeat Rangda
+7613:Let Them Out!
+7614:Head on Out
+7615:Take Him Down
+7632:Lesson 4: Gather Intelligence
+7623:Cat Ears?
+7624:EN GARDE!
+7625:The Light Of Destiny
+7626:Stuff for Dummies
+7627:Build the Dummies
+7628:Battle the Dummies
+7629:Lesson 1: Bravery
+7630:Lesson 2: Armor
+7631:Lesson 3: Protection
+7633:Lesson 5: Demolition
+7634:Lesson 6: Searching
+7635:Get the Axe
+7636:Never Give Up
+7637:I CPU U!
+7638:Keep Droning On
+7639:Gathering Data
+7640:Signal Flare
+7641:Medal Time
+7642:Hidden Data
+7648:The Edge of Destiny
+7649:The Edge of Destiny (AC)
+7650:Forging a Friendship
+7651:Void Highlord Badge
+7652:Necrotic Sword of Doom Badge
+7643:Pass the CPU
+7644:The Guards
+7645:Circui-try This
+7646:The Thing
+7647:Like Father, Like Son
+7653:The Final Form
+7654:This Little Light Of Mine
+7655:I'm Gonna Let It Shine
+7656:Infestation
+7657:Orpheum Elemental
+7658:Nightmare Skull
+7659:Nightspores
+7660:Nightwyrm
+7661:Dreamdust
+7662:Dream Larvae
+7664:Somnic Energy
+7665:Dream Truffles
+7666:Simple Orphium Blade
+7667:Try the Blade
+7668:Get the Wyrms
+7669:Dreamsilk Hair
+7670:Pest Control
+7671:Eaters of Dreams
+7672:Mind-Breaking It In
+7663:Banish the Skulls
+7680:Forward Unto Azalith
+7681:Azalith Faced
+7682:Saci Do What he Wants
+7673:Retrieve your Blinding Light of Destiny
+7674:Wayfarer Potion
+7675:The Path Revealed
+7676:Well of Knowledge
+7677:Gather the Artifacts
+7678:Oh Well, Oh Well Guardian
+7679:Infernal Commands
+7683:Undying Rage
+7684:Can Ya Smell What Cucaâ€™s Cooking?
+7685:Shadow Medals
+7686:Mega Shadow Medals
+7687:Defeat Goldun
+7688:Goldun Wants Revenge
+7690:Eyes on You
+7691:Behind the Tentacles
+7692:Overwhelming Minions
+7696:Follow the Trail
+7697:Clear the Tunnel
+7698:Blow it up!
+7699:The Heart of the Matter
+7700: A Closer Look
+7701:TLaPD 2020 Collection Badge
+7702:Fight the Crew
+7693:Ground Kelp?
+7694:Slug 'em!
+7695:Shadows and Chaos
+7712:Snack Time
+7703:Reach the Ship
+7704:Get the Bombs
+7705:Blow 'er Up!
+7706:Defeat the Captain
+7707:More Pirates
+7708:Steal for Scouts
+7709:Make them Work
+7710:Find the Amulet
+7711:Retrieve the Amulet
+7713:Sailor of the Celestial Skies
+7714:A Second First Mate
+7715:Sunken Treasure?
+7716:Acquiring Ancient Secrets
+7717:Time to Train Yourself
+7718:Do You Have the Time?
+7719:Through the Wormhole
+7720:Rend
+7721:Confluence of Fates
+7722:Dragon's Will
+7728:Invasion!
+7729:Rescue Needed
+7730:Get their Intel
+7731:Clue me in
+7732:So Familiar
+7723:Burning Fates
+7724:Hero's Heartbeat
+7725:I'm Loving It My Way
+7726:Chaos Champion's Pet Quest
+7727:Anniversary Badge
+7733:Protect the Light
+7734:Fend them Off
+7735:Get the Keys
+7736:Unlock the Door
+7737:Defeat Gravelyn
+7738:Restoring Order
+7739:Eternal Dragon Collection Chest Quest
+7740:The Situation
+7741:A Study In Shadow
+7742:Precision Strike
+7744:Scared of the Dark
+7745:Go Bye-Bye
+7746:Essential Oils
+7747:What A Mess
+7748:Prosciutto!
+7749:A Blight On Us All
+7750:Unending Blight
+7751:I Want to Be The Very Best Necromancer
+7752:Like No One Ever Was
+7743:Pants On Fire
+7760:Spacetime
+7761:Find Khasaanda
+7762:Find the Heart
+7753:To Raise Them is my Real Quest
+7754:ShadowEater's Gift
+7755:Lion Guardian's Gift
+7756:Blood and Ashes
+7757:Drink and Fight
+7758:Oooommm
+7759:Slay the Wraiths
+7763:Ooh, That Smell
+7764:So Twisted
+7765:Purifying Flames
+7766:Return to Iadoa
+7767:The Dragon
+7768:The Shadows Recede
+7769:Lost Breadcrumbs
+7770:Dirty Laundry
+7771:Ergot Bread
+7772:Kids These Days
+7776:The Black Goat in The Dark
+7777:The Star Sinks into the Sea
+7778:The Gentlest Truth
+7779:Time Moves the Moon
+7780:Sweet Dreams Are Made of Teeth
+7781:I heard you like Gacha
+7782:Decorate Your Space
+7773:No Good Deed
+7774:A Worn Bookâ€™s Cover
+7775:No Good Deed
+7776:The Black Goat in The Dark
+7777:The Star Sinks into the Sea
+7778:The Gentlest Truth
+7779:Time Moves the Moon
+7780:Sweet Dreams Are Made of Teeth
+7781:I heard you like Gacha
+7782:Decorate Your Space
+7783:Apocalyptic House Items
+7784:That Cake is a Lie
+7785:Get the Cupcakes
+7792:Too Bright
+7793:What's That Under my Bed?
+7794:Why Can't I Sleep?
+7795:Clean Up Clean Up Everybody Do Your Scare
+7786:Wash it Down
+7787:Freezer Key
+7788:Ice it Up
+7789:I Scream, You Scream!
+7790:Clear the Hallway
+7791:Sleepytime Gear

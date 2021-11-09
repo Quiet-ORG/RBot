@@ -37,15 +37,19 @@ package xyz.rodit.rbot
 			this.addCallback("attackPlayer", Main.attackPlayer);
 			this.addCallback("useSkill", Main.useSkill);
 			this.addCallback("catchPackets", Main.catchPackets);
-			this.addCallback("magnetize", Main.magnetize);
+			this.addCallback("magnetise", Main.magnetise);
 			this.addCallback("infiniteRange", Main.infiniteRange);
 			this.addCallback("skipCutscenes", Main.skipCutscenes);
 			this.addCallback("killLag", Main.killLag);
 			this.addCallback("disableFX", Main.disableFX);
 			this.addCallback("hidePlayers", Main.hidePlayers);
+			this.addCallback("disableDeathAd", Main.disableDeathAd);
 			this.addCallback("sendClientPacket", Main.sendClientPacket);
 			this.addCallback("getDrops", Main.getDrops);
 			this.addCallback("injectScript", Main.injectScript);
+			
+			this.addCallback("UserID", Main.UserID);
+            this.addCallback("Gender", Main.Gender);
 			
 			this.addCallback("lnkCreate", RemoteRegistry.ext_create);
 			this.addCallback("lnkDestroy", RemoteRegistry.ext_destroy);
